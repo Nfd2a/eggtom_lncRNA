@@ -1,0 +1,76 @@
+---
+title: "Preprocessing"
+author: "Antone Jung"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document: 
+    code_folding: show
+    theme: spacelab
+    highlight: pygments
+    keep_md: no
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+      toc_depth: 3
+  keep_md: true  
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.align = "center")
+```
+
+#Goals
+
+1. Trim raw reads
+2. Detect strandedness
+
+#Input
+
+1. Raw `.fastq.gz` files from Michelle's Diurnal BARI06 series, Byron's Organ Atlas BARI06 data
+2. M82/BARI06 Transcriptome
+
+#Output
+
+1. Trimmed `.fastq.gz` files
+2. Salmon detection files
+
+```{r set-seed}
+set.seed(10202005)
+```
+
+```{bash fastp-trimming-egg, eval = FALSE}
+for file in data/00_raw_input_reads/egg/michelle/*R1_001.fastq.gz
+  do
+  base=$(basename "$file")
+  base1=${base%%_001*}
+  base2=${base1/R1/R2}
+  /programs/fastp-0.23.4/fastp -i $file -I ${file/R1/R2} -o data/01_preprocessing/trimmed_reads/egg/${base1}"_trimmed.fastq.gz" -O data/01_preprocessing/trimmed_reads/egg/${base2}"_trimmed.fastq.gz" -h data/01_preprocessing/fastp_reports/egg/michelle/${base1}.html -j /dev/null --thread 16
+  done
+  
+egg_byron_trim () {
+  base1=$(basename "$1" .fastq.gz)
+  base2=${base1/R1/R2}
+	r2_filename=${1/R1/R2}
+	/programs/fastp-0.23.4/fastp -i $1 -I $r2_filename -o data/01_preprocessing/trimmed_reads/egg/${base1}"_trimmed.fastq.gz" -O data/01_preprocessing/trimmed_reads/egg/${base2}"_trimmed.fastq.gz" -h data/01_preprocessing/fastp_reports/egg/byron/${base1}.html -j /dev/null --thread 16
+}
+export -f egg_byron_trim
+parallel egg_byron_trim ::: data/00_raw_input_reads/egg/byron/*R1.fastq.gz
+```
+
+```{bash salmon-strandedness, eval = FALSE}
+salmon index -t resources/eggplant_transcriptome.fasta -i eggsalmon_index
+
+for r1_filename in data/01_preprocessing/trimmed_reads/egg/*trimmed.fastq.gz
+	do
+	base=$(basename $r1_filename _R1_trimmed.fastq.gz)
+	r2_filename=${r1_filename/R1/R2}
+	/programs/salmon-1.10.0/bin/salmon quant -l A -1 $r1_filename -2 $r2_filename -i eggplant_salmonindex -o data/01_preprocessing/salmon_detection/${base}_quant
+	done
+```
+
+Ran with Fastp-0.23.4 and Salmon 1.10.2

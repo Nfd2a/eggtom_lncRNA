@@ -1,0 +1,1 @@
+/programs/TransDecoder-v5.5.0/util/compute_base_probs.pl ../egg_01CPC2/egg_noncoding.fasta 0 > /home/FrankLab/shared/aj564/eggtom_lncRNA/data/03_filtering/egg_02TransDecoder/egg_noncoding.fasta.transdecoder_dir/base_freqs.dat
