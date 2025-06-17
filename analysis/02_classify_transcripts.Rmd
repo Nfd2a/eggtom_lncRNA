@@ -53,21 +53,21 @@ SEED=10202005
 ```{bash hisat-mapping}
 source /programs/HISAT2/hisat2.sh
 
-for r1_filename in data/01_preprocessing/trimmed_reads/egg/EE*R1_trimmed.fastq.gz
-	do
-	base=$(basename $r1_filename _R1_trimmed.fastq.gz)
-	r2_filename=${r1_filename/R1/R2}
-	hisat2 -p 20 -x resources/egg_hisat_indices/nategg_index --max-intronlen 1500 --dta-cufflinks --rna-strandness FR -1 $r1_filename -2 $r2_filename | samtools sort -o data/02_transcripts/egg_01mapped/${base}.bam
-	done
-	
+egg_hisat_FR () {
+  base=$(basename "$1" _R1_trimmed.fastq.gz)
+	r2_filename=${1/R1/R2}
+	hisat2 -p 20 -x resources/egg_hisat_indices/nategg_index --max-intronlen 1500 --dta-cufflinks --rna-strandness FR -1 $1 -2 $r2_filename | samtools sort -o data/02_transcripts/egg_01mapped/${base}.bam
+}
+export -f egg_hisat_Fr
+parallel egg_hisat_FR ::: data/01_preprocessing/trimmed_reads/egg/EE*R1*
 
-hisat_RF () {
+egg_hisat_RF () {
   base=$(basename "$1" _R1_trimmed.fastq.gz)
 	r2_filename=${1/R1/R2}
 	hisat2 -p 20 -x resources/egg_hisat_indices/nategg_index --max-intronlen 1500 --dta-cufflinks --rna-strandness RF -1 $1 -2 $r2_filename | samtools sort -o data/02_transcripts/egg_01mapped/${base}.bam
 }
-export -f hisat_RF
-parallel hisat_RF ::: data/01_preprocessing/trimmed_reads/egg/123*R1*
+export -f egg_hisat_RF
+parallel egg_hisat_RF ::: data/01_preprocessing/trimmed_reads/egg/123*R1*
 ```
 
 ```{bash string-tie-assembly}
@@ -76,16 +76,16 @@ export PATH=/programs/stringtie-2.2.1:$PATH
 ls data/02_transcripts/egg_01mapped/*.bam | parallel samtools index '{}'
 
 stringtie_assemble_FR () {
-  base=$(basename $1 .bam)
-  stringtie -p 8 $1 -G resources/agat_bari06.gtf -o data/02_transcripts/egg_02assembled/${base}_stringtie.gtf -f 0.05 -j 5 -c 5 -s 15 --fr
+  base=$(basename "$1" .bam)
+  stringtie -p 8 "$1" -G resources/agat_bari06.gtf -o data/02_transcripts/egg_02assembled/${base}_stringtie.gtf -f 0.05 -j 5 -c 5 -s 15 --fr
 }
 export -f stringtie_assemble_FR
 
 parallel stringtie_assemble_FR ::: data/02_transcripts/egg_01mapped/EE*.bam
 
 stringtie_assemble_RF () {
-  base=$(basename $1 .bam)
-  stringtie -p 8 $1 -G resources/agat_bari06.gtf -o data/02_transcripts/egg_02assembled/${base}_stringtie.gtf -f 0.05 -j 5 -c 5 -s 15 --rf
+  base=$(basename "$1" .bam)
+  stringtie -p 8 "$1" -G resources/agat_bari06.gtf -o data/02_transcripts/egg_02assembled/${base}_stringtie.gtf -f 0.05 -j 5 -c 5 -s 15 --rf
 }
 export -f stringtie_assemble_RF
 
@@ -117,4 +117,8 @@ grep -v "ch00" data/02_transcripts/egg_04gffcompare/egg_gffcompare.annotated.gtf
 
 ```{bash gffread-gtf-to-fa}
 /programs/gffread-0.9.12/gffread/gffread data/02_transcripts/egg_05classified/egg_antint.gtf -g resources/galaxy_bari06.fa -w data/02_transcripts/egg_05classified/egg_antint.fasta
+
+grep -o "MSTRG.[0123456789]*" data/02_transcripts/egg_05classified/egg_antint.gtf | uniq | wc -l
 ```
+
+There are 6787 genes that are classified as intergenic or antisense by gffread

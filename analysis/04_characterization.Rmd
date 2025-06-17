@@ -1,0 +1,132 @@
+---
+title: "Measuring expression and functional characterization"
+author: "Antone Jung"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document: 
+    code_folding: show
+    theme: spacelab
+    highlight: pygments
+    keep_md: no
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+      toc_depth: 3
+  keep_md: true  
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.align = "center")
+```
+
+# Goals
+
+1. Generate expression 
+
+# Input
+
+# Output
+
+```{bash salmon-quantification}
+grep "^>" resources/galaxy_bari06.fa | cut -d " " -f 1 > data/04_characterization/egg_01quant/egg_decoys.txt
+
+sed -i.bak -e 's/>//g' data/04_characterization/egg_01quant/egg_decoys.txt
+
+/programs/gffread-0.9.12/gffread/gffread data/03_filtering/egg_06lncRNA/egg_lncRNA_genes.gtf -g resources/galaxy_bari06.fa -w data/03_filtering/egg_06lncRNA/egg_lncRNA_genes.fasta
+
+cat data/03_filtering/egg_06lncRNA/egg_lncRNA_genes.fasta resources/galaxy_bari06.fa > data/04_characterization/egg_01quant/egg_gentrome.fa
+
+/programs/salmon-1.10.0/bin/salmon index -t data/04_characterization/egg_01quant/egg_gentrome.fa -d data/04_characterization/egg_01quant/egg_decoys.txt -p 12 -i data/04_characterization/egg_01quant/egg_salmon_index
+
+for file in data/01_preprocessing/egg_trimmed_reads/*R1*; do base=$(basename $file _R1_trimmed.fastq.gz); r2_filename=${file/R1/R2}; /programs/salmon-1.10.0/bin/salmon quant -l A -i data/04_characterization/egg_01quant/egg_salmon_index \
+-1 $file -2 $r2_filename \
+--gcBias --posBias --seqBias \
+-o data/04_characterization/egg_01quant/egg_salmon/${base}_quant; done
+
+grep -o "MSTRG.[0\-9]*.1\s" data/04_characterization/egg_01quant/egg_salmon/EE_1800_R_1_S106_quant/quant.sf | sed '1s/^/Name\n/' > data/04_characterization/egg_01quant/egg_quant_matrix.txt
+
+for file in data/04_characterization/egg_01quant/egg_salmon/123*_quant/quant.sf; do base=$(echo "$file" | cut -d '_' -f 8); grep "MSTRG.[0\-9]*.1\s" $file | cut -d $'\t' -f 4 | sed "1s/^/${base}\n/" > temp.txt; paste data/04_characterization/egg_01quant/egg_quant_matrix.txt temp.txt > data/04_characterization/egg_01quant/egg_quant_temp_matrix.txt; cp data/04_characterization/egg_01quant/egg_quant_temp_matrix.txt data/04_characterization/egg_01quant/egg_quant_matrix.txt; rm temp.txt; done
+
+for file in data/04_characterization/egg_01quant/egg_salmon/EE*_quant/quant.sf; do base=$(echo "$file" | cut -d '_' -f 6,7,8); grep "MSTRG.[0\-9]*.1\s" $file | cut -d $'\t' -f 4 | sed "1s/^/${base}\n/" > temp.txt; paste data/04_characterization/egg_01quant/egg_quant_matrix.txt temp.txt > data/04_characterization/egg_01quant/egg_quant_temp_matrix.txt; cp data/04_characterization/egg_01quant/egg_quant_temp_matrix.txt data/04_characterization/egg_01quant/egg_quant_matrix.txt; rm temp.txt; done
+
+rm data/04_characterization/egg_01quant/egg_quant_temp_matrix.txt
+
+``` 
+
+```{bash seekr-function}
+docker1 pull calabreselab/seekr:latest
+
+docker1 images
+
+docker1 run -d -it calabreselab/seekr /bin/bash
+
+docker1 ps -a
+
+cp data/03_filtering/egg_06lncRNA/egg_lncRNA_genes.fasta /workdir/aj564
+cp resources/eggplant_transcriptome.fasta /workdir/aj564
+
+for i in {2..6}; do docker1 run -v /workdir/aj564:/dock calabreselab/seekr:latest seekr_norm_vectors /dock/eggplant_transcriptome.fasta -k $i -mv /dock/e${i}mean.npy -sv /dock/e${i}std.npy; done
+
+for i in {2..6}; do docker1 run -v /workdir/aj564:/dock calabreselab/seekr:latest seekr_kmer_counts /dock/egg_lncRNA_genes.fasta -k $i -mv /dock/e${i}mean.npy -sv /dock/e${i}.npy -o /dock/e${i}counts.csv; done
+
+for i in {2..6}; do docker1 run -v /workdir/aj564:/dock calabreselab/seekr:latest seekr_kmer_leiden /dock/egg_lncRNA_genes.fasta /dock/e${i}mean.npy /dock/e${i}std.npy $i -a RBERVertexPartition -r 1.0 -pco 0.1 -sd -ec threshold -et 0.2 -pn /dock/e${i}leiden -cf /dock/e${i}; done
+
+cp /workdir/aj564/e*std.npy data/04_characterization/egg_02function/
+cp /workdir/aj564/e*mean.npy data/04_characterization/egg_02function/
+cp /workdir/aj564/e*counts.csv data/04_characterization/egg_02function/
+cp /workdir/aj564/e*leiden* data/04_characterization/egg_02function/
+
+docker1 clean all
+```
+
+```{bash pca-with-clusters}
+library(dplyr)
+library(tidyverse)
+library(stats)
+library(data.table)
+
+install.packages('ggfortify')
+
+library(ggfortify)
+
+e4count <- read.csv("data/04_characterization/egg_02function/e4counts_genes.csv", header = FALSE)
+e4nodes <- read.csv("data/04_characterization/egg_02function/e4_nodes_leiden_genes.csv", header = FALSE)
+
+e4count_clean <- e4count %>% mutate(V1 = substring(V1, 2))
+
+e4count_rownames <- e4count_clean$V1
+
+rownames(e4count_clean) <- e4count_rownames
+
+e4count_clean <- select(e4count_clean, -V1)
+
+e4nodes_clean <- e4nodes[,c("V1","V3")]
+
+for (r in 1:nrow(e4nodes_clean)){
+  if (e4nodes_clean[r, "V3"] > 5){
+    e4nodes_clean[r, "V3"] = 6
+  }
+}
+
+e4nodes_clean <- e4nodes_clean %>% rename ("group" = "V3")
+
+rownames(e4nodes_clean) <- e4nodes_clean$V1
+
+pca_result <- prcomp(e4count_clean, scale. = TRUE)
+
+autoplot(pca_result, data = e4nodes_clean, colour = 'group')
+
+summary(pca_result)
+
+```
+
+```{r expression_heatmap}
+egg_quant <- read.table("data/04_characterization/egg_01quant/egg_quant_matrix.txt", header = TRUE, row.names = 1)
+
+heatmap(as.matrix(egg_quant))
+```

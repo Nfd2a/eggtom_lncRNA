@@ -1,7 +1,7 @@
 ch01	StringTie	transcript	553657	554425	.	+	.	transcript_id "MSTRG.4671.1"; gene_id "MSTRG.4671"; xloc "XLOC_005324"; class_code "u"; tss_id "TSS5444";
 ch01	StringTie	transcript	1135589	1139947	.	+	.	transcript_id "MSTRG.4748.1"; gene_id "MSTRG.4748"; xloc "XLOC_005357"; class_code "u"; tss_id "TSS5496";
 ch01	StringTie	transcript	1135618	1139947	.	+	.	transcript_id "MSTRG.4748.2"; gene_id "MSTRG.4748"; xloc "XLOC_005357"; class_code "u"; tss_id "TSS5496";
-ch01	StringTie	transcript	1165301	1166428	.	+	.	transcript_id "MSTRG.4750.1"; gene_id "MSTRG.4750"; xloc "XLOC_005358"; class_code "u"; tss_id "TSS5497";
+ch01	StringTie	transcript	1165301	1166428	.	+	.	transcript_id "MSTRG.4750.1"; gene_id "MSTRG.4750"; xloc "XLOC_005358"; class_code "u"; tss_id "TSS5497"; 
 ch01	StringTie	transcript	1240058	1241731	.	+	.	transcript_id "MSTRG.4762.1"; gene_id "MSTRG.4762"; xloc "XLOC_005362"; class_code "u"; tss_id "TSS5503";
 ch01	StringTie	transcript	1240076	1241731	.	+	.	transcript_id "MSTRG.4762.2"; gene_id "MSTRG.4762"; xloc "XLOC_005362"; class_code "u"; tss_id "TSS5503";
 ch01	StringTie	transcript	2020113	2021226	.	+	.	transcript_id "MSTRG.4869.1"; gene_id "MSTRG.4869"; xloc "XLOC_005413"; cmp_ref "nbis-transcript-1859"; class_code "x"; cmp_ref_gene "g3182"; tss_id "TSS5580";

@@ -34,7 +34,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 #Outputs
 
-1. lncRNAs
+1. Fully annotated gtf with the results of each filtering step
 
 ```{r set-seed}
 set.seed(10202005)
@@ -47,68 +47,79 @@ SEED=10202005
 ```{bash CPC2}
 resources/CPC2_standalone-1.0.1/bin/CPC2.py -i data/02_transcripts/egg_05classified/egg_antint.fasta -o data/03_filtering/egg_01CPC2/egg_antintCPC2
 
-grep "noncoding" data/03_filtering/egg_01CPC2/egg_antint_CPC2.txt > data/03_filtering/egg_01CPC2/egg_noncoding.txt
+grep "noncoding" data/03_filtering/egg_01CPC2/egg_antintCPC2.txt | grep -o 'MSTRG.[0/-9]*.[0/-9]*' | sed 's/$/\"/' | sed 's/^/\"/' > data/03_filtering/egg_01CPC2/egg_noncoding.txt
 
-grep "coding" data/03_filtering/egg_01CPC2/egg_antint_CPC2.txt > data/03_filtering/egg_01CPC2/egg_coding.txt
+grep -w "coding" data/03_filtering/egg_01CPC2/egg_antintCPC2.txt | grep -o 'MSTRG.[0/-9]*.[0/-9]*' | sed 's/$/\"/' | sed 's/^/\"/' > data/03_filtering/egg_01CPC2/egg_coding.txt
 
-grep -o '\S*MSTRG.\S*' data/03_filtering/egg_01CPC2/egg_noncoding.txt > data/03_filtering/egg_01CPC2/egg_noncoding_names.txt
+grep -h -f data/03_filtering/egg_01CPC2/egg_noncoding.txt data/02_transcripts/egg_05classified/egg_antint.gtf | sed 's/$/ CPC2 \"noncoding\";/' > data/03_filtering/egg_01CPC2/egg_CPC2_annotated.gtf
 
-grep -h -f data/03_filtering/egg_01CPC2/egg_noncoding_names.txt data/02_transcripts/egg_05classified/egg_antint.gtf > data/03_filtering/egg_01CPC2/egg_noncoding.gtf
+grep -h -f data/03_filtering/egg_01CPC2/egg_coding.txt data/02_transcripts/egg_05classified/egg_antint.gtf | sed 's/$/ CPC2 \"coding\";/' >> data/03_filtering/egg_01CPC2/egg_CPC2_annotated.gtf
 
-grep -o "StringTie" data/03_filtering/egg_01CPC2/egg_noncoding.gtf | wc -l
-
-/programs/gffread-0.9.12/gffread/gffread data/03_filtering/egg_01CPC2/egg_noncoding.gtf -g resources/galaxy_bari06.fa -w data/03_filtering/egg_01CPC2/egg_noncoding.fasta
+sort data/03_filtering/egg_01CPC2/egg_CPC2_annotated.gtf -o data/03_filtering/egg_01CPC2/egg_CPC2_annotated.gtf
 ```
 
 ```{bash transdecoder}
 cd data/03_filtering/egg_02TransDecoder
-/programs/TransDecoder-v5.5.0/TransDecoder.LongOrfs -t ../egg_01CPC2/egg_noncoding.fasta
 
-/programs/hmmer/bin/hmmsearch --cpu 16 -E 1e-10 --domtblout egg_pfam.domtblout ../../../resources/Pfam-A.hmm egg_noncoding.fasta.transdecoder_dir/longest_orfs.pep
+/programs/TransDecoder-v5.5.0/TransDecoder.LongOrfs -t ../../02_transcripts/egg_05classified/egg_antint.fasta
 
-blastp -query egg_noncoding.fasta.transdecoder_dir/longest_orfs.pep -db swissprot -max_target_seqs 1 -outfmt 6 -evalue 1e-5 -out egg_blastp.outfmt6 -remote
+/programs/hmmer/bin/hmmsearch --cpu 16 -E 1e-10 --domtblout egg_pfam.domtblout ../../../resources/Pfam-A.hmm egg_antint.fasta.transdecoder_dir/longest_orfs.pep
 
-/programs/TransDecoder-v5.5.0/TransDecoder.Predict -t ../egg_01CPC2/egg_noncoding.fasta --retain_pfam_hits egg_pfam.domtblout --retain_blastp_hits egg_blastp.outfmt6
+cd ../../../resources/swissprot
+blastp -query ../../data/03_filtering/egg_02TransDecoder/egg_antint.fasta.transdecoder_dir/longest_orfs.pep -db swissprot -max_target_seqs 1 -outfmt 6 -evalue 1e-5 -out ../../data/03_filtering/egg_02TransDecoder/egg_blastp.outfmt6
 
-grep -o '>MSTRG\S*' egg_noncoding.fasta.transdecoder.cds | grep -o 'MSTRG.[0123456789]*.[0123456789]*' > egg_ORFs.txt
+cd ../../data/03_filtering/egg_02TransDecoder
+/programs/TransDecoder-v5.5.0/TransDecoder.Predict -t ../../02_transcripts/egg_05classified/egg_antint.fasta --retain_pfam_hits egg_pfam.domtblout --retain_blastp_hits egg_blastp.outfmt6 
 
-grep -h -v -f egg_ORFs.txt ../egg_01CPC2/egg_noncoding.gtf > egg_nonORFs.gtf
+grep -o '>MSTRG\S*' egg_antint.fasta.transdecoder.cds | grep -o 'MSTRG\.[0/-9]*\.[0/-9]*' | sed 's/$/\"/' | sed 's/^/\"/' | uniq > egg_ORFs.txt
+
+grep -h -v -f egg_ORFs.txt ../egg_01CPC2/egg_CPC2_annotated.gtf | grep -o 'MSTRG\.[0/-9]*\.[0/-9]*' | sed 's/$/\"/' | sed 's/^/\"/' > egg_nonORFs.txt
+
 cd ../../..
 
-/programs/gffread-0.9.12/gffread/gffread data/03_filtering/egg_02TransDecoder/egg_nonORFs.gtf -g resources/galaxy_bari06.fa -w data/03_filtering/egg_02TransDecoder/egg_nonORFs.fasta
+grep -h -f data/03_filtering/egg_02TransDecoder/egg_nonORFs.txt data/03_filtering/egg_01CPC2/egg_CPC2_annotated.gtf | sed 's/$/ TransDecoder \"nonORFs\";/' > data/03_filtering/egg_02TransDecoder/egg_TransDecoder_annotated.gtf
+
+grep -h -f data/03_filtering/egg_02TransDecoder/egg_ORFs.txt data/03_filtering/egg_01CPC2/egg_CPC2_annotated.gtf | sed 's/$/ TransDecoder \"ORFs\";/' >> data/03_filtering/egg_02TransDecoder/egg_TransDecoder_annotated.gtf
+
+sort data/03_filtering/egg_02TransDecoder/egg_TransDecoder_annotated.gtf -o data/03_filtering/egg_02TransDecoder/egg_TransDecoder_annotated.gtf
 ```
 
 ```{bash infernal}
 export PATH=/programs/infernal-1.1.3/bin:$PATH
 cd resources/rfam
 
-cmscan -o ../../data/03_filtering/egg_03RFAM/infernal.log --noali --tblout ../../data/03_filtering/egg_03RFAM/egg_rfam.tblout --rfam --cpu 24 Rfam.cm ../../data/03_filtering/egg_02TransDecoder/egg_nonORFs.fasta
+cmscan -o ../../data/03_filtering/egg_03RFAM/infernal.log --noali --tblout ../../data/03_filtering/egg_03RFAM/egg_rfam.tblout --rfam --cpu 24 Rfam.cm ../../data/02_transcripts/egg_05classified/egg_antint.fasta
 cd ../..
 
 grep '!' data/03_filtering/egg_03RFAM/egg_rfam.tblout > data/03_filtering/egg_03RFAM/egg_rfam_sig.txt
 
-grep 'sno' data/03_filtering/egg_03RFAM/egg_rfam_sig.txt | grep -o 'MSTRG.[0123456789]*.[0123456789]*'| uniq > data/03_filtering/egg_03RFAM/egg_snoRNA.txt
+grep -o 'MSTRG\.[0/-9]*\.[0/-9]*' data/03_filtering/egg_03RFAM/egg_rfam_sig.txt | uniq | sed 's/$/\"/' | sed 's/^/\"/' > data/03_filtering/egg_03RFAM/egg_knownRNA.txt
 
-grep 'ribosomal RNA' data/03_filtering/egg_03RFAM/egg_rfam_sig.txt | grep -o 'MSTRG.[0123456789]*.[0123456789]*'| uniq > data/03_filtering/egg_03RFAM/egg_rRNA.txt
+grep -h -v -f data/03_filtering/egg_03RFAM/egg_knownRNA.txt data/03_filtering/egg_02TransDecoder/egg_TransDecoder_annotated.gtf | grep -o 'MSTRG\.[0/-9]*\.[0/-9]*' | sed 's/$/\"/' | sed 's/^/\"/' > data/03_filtering/egg_03RFAM/egg_not_knownRNA.txt
 
-grep 'microRNA' data/03_filtering/egg_03RFAM/egg_rfam_sig.txt | grep -o 'MSTRG.[0123456789]*.[0123456789]*'| uniq > data/03_filtering/egg_03RFAM/egg_miRNA.txt
+grep -h -f data/03_filtering/egg_03RFAM/egg_knownRNA.txt data/03_filtering/egg_02TransDecoder/egg_TransDecoder_annotated.gtf | sed 's/$/ RFAM \"known\";/' > data/03_filtering/egg_03RFAM/egg_RFAM_annotated.gtf
 
-grep 'tRNA' data/03_filtering/egg_03RFAM/egg_rfam_sig.txt | grep -o 'MSTRG.[0123456789]*.[0123456789]*'| uniq > data/03_filtering/egg_03RFAM/egg_tRNA.txt
+grep -h -f data/03_filtering/egg_03RFAM/egg_not_knownRNA.txt data/03_filtering/egg_02TransDecoder/egg_TransDecoder_annotated.gtf | sed 's/$/ RFAM \"not known\";/' >> data/03_filtering/egg_03RFAM/egg_RFAM_annotated.gtf
 
-grep -o 'MSTRG.[0123456789]*.[0123456789]*' data/03_filtering/egg_03RFAM/egg_rfam_sig.txt | uniq > data/03_filtering/egg_03RFAM/egg_knownRNA.txt
-
-grep -h -v -f data/03_filtering/egg_03RFAM/egg_knownRNA.txt data/03_filtering/egg_02TransDecoder/egg_nonORFs.gtf > data/03_filtering/egg_03RFAM/egg_unknownRNA.gtf
+sort data/03_filtering/egg_03RFAM/egg_RFAM_annotated.gtf -o data/03_filtering/egg_03RFAM/egg_RFAM_annotated.gtf
 ```
 
 ```{bash feature-counts}
-/programs/subread-2.1.1/bin/featureCounts -T 24 -p -a data/03_filtering/egg_03RFAM/egg_unknownRNA.gtf -F 'GTF' -t transcript -o data/03_filtering/egg_04FeatureCounts/egg_counts.txt data/02_transcripts/egg_01mapped/*.bam
+#transcript level
+/programs/subread-2.1.1/bin/featureCounts -T 24 -p -a data/02_transcripts/egg_05classified/egg_antint.gtf -F 'GTF' -g 'transcript_id' -t transcript -o data/03_filtering/egg_04FeatureCounts/egg_transcript_counts.txt data/02_transcripts/egg_01mapped/*.bam
 
-grep 'MSTRG' data/03_filtering/egg_04FeatureCounts/egg_counts.txt > data/03_filtering/egg_04FeatureCounts/egg_counts_no_metadata.txt
+#gene level
+/programs/subread-2.1.1/bin/featureCounts -T 24 -p -a data/02_transcripts/egg_05classified/egg_antint.gtf -F 'GTF' -t transcript -o data/03_filtering/egg_04FeatureCounts/egg_gene_counts.txt data/02_transcripts/egg_01mapped/*.bam
+
+grep 'MSTRG' data/03_filtering/egg_04FeatureCounts/egg_transcript_counts.txt > data/03_filtering/egg_04FeatureCounts/egg_transcript_counts_no_metadata.txt
+
+grep 'MSTRG' data/03_filtering/egg_04FeatureCounts/egg_gene_counts.txt > data/03_filtering/egg_04FeatureCounts/egg_gene_counts_no_metadata.txt
 ```
 
 ```{r filter-low-expression}
 library(dplyr)
-egg_counts_no_metadata <- read.csv("data/03_filtering/egg_04FeatureCounts/egg_counts_no_metadata.txt", sep = "\t", header = FALSE)
+egg_gene_counts <- read.csv("data/03_filtering/egg_04FeatureCounts/egg_gene_counts.txt", sep = "\t", header = FALSE, skip = 2)
+egg_transcript_counts <- read.csv("data/03_filtering/egg_04FeatureCounts/egg_transcript_counts.txt", sep = "\t", header = FALSE, skip = 2) 
 
 expression_level <- function(min_reads, min_count, arr){
   sum_reads <- 0
@@ -120,13 +131,79 @@ expression_level <- function(min_reads, min_count, arr){
   return (sum_reads >= min_reads)
 }
 
-rows_to_keep <-c()
-for (r in 1:nrow(egg_counts_no_metadata)){
-  if(expression_level(3,3,egg_counts_no_metadata[r,7:108])){
-    rows_to_keep<- append(rows_to_keep,r)
+gene_rows_to_keep <-c()
+transcript_rows_to_keep <- c()
+
+for (r in 1:nrow(egg_gene_counts)){
+  if(expression_level(3,3,egg_gene_counts[r,7:108])){
+    gene_rows_to_keep<- append(gene_rows_to_keep,r)
+  }
+}
+for (r in 1:nrow(egg_transcript_counts)){
+  if(expression_level(3,3,egg_transcript_counts[r,7:108])){
+    transcript_rows_to_keep<- append(transcript_rows_to_keep,r)
   }
 }
 
-egg_counts_filtered <- egg_counts_no_metadata[rows_to_keep,]
-write.table(egg_counts_filtered$V1, file = "data/03_filtering/egg_04FeatureCounts/egg_lncRNA.txt", col.names = FALSE, row.names=FALSE, sep="\t", quote = FALSE)
+egg_gene_counts_filtered <- egg_gene_counts[gene_rows_to_keep,]
+egg_transcript_counts_filtered <- egg_transcript_counts[transcript_rows_to_keep,]
+
+egg_gene_counts_discard <- egg_gene_counts[-(gene_rows_to_keep),]
+egg_transcript_counts_discard <- egg_transcript_counts[-(transcript_rows_to_keep),]
+
+write.table(egg_gene_counts_filtered$V1, file = "data/03_filtering/egg_04FeatureCounts/egg_gene_highexpr.txt", col.names = FALSE, row.names=FALSE, sep="\t", quote = FALSE)
+write.table(egg_transcript_counts_filtered$V1, file = "data/03_filtering/egg_04FeatureCounts/egg_transcript_highexpr.txt", col.names = FALSE, row.names=FALSE, sep="\t", quote = FALSE)
+
+write.table(egg_gene_counts_discard$V1, file = "data/03_filtering/egg_04FeatureCounts/egg_gene_lowexpr.txt", col.names = FALSE, row.names=FALSE, sep="\t", quote = FALSE)
+write.table(egg_transcript_counts_discard$V1, file = "data/03_filtering/egg_04FeatureCounts/egg_transcript_lowexpr.txt", col.names = FALSE, row.names=FALSE, sep="\t", quote = FALSE)
+```
+
+```{bash annotate-with-expr}
+sed -i 's/$/\"/' data/03_filtering/egg_04FeatureCounts/egg_transcript_lowexpr.txt
+sed -i 's/^/\"/' data/03_filtering/egg_04FeatureCounts/egg_transcript_lowexpr.txt
+
+sed -i 's/$/\"/' data/03_filtering/egg_04FeatureCounts/egg_transcript_highexpr.txt
+sed -i 's/^/\"/' data/03_filtering/egg_04FeatureCounts/egg_transcript_highexpr.txt
+
+grep -h -f data/03_filtering/egg_04FeatureCounts/egg_gene_highexpr.txt data/03_filtering/egg_03RFAM/egg_RFAM_annotated.gtf | sed 's/$/ Gene3in3 \"high\";/' > data/03_filtering/egg_04FeatureCounts/egg_geneexpr_annotated.gtf
+
+grep -h -f data/03_filtering/egg_04FeatureCounts/egg_gene_lowexpr.txt data/03_filtering/egg_03RFAM/egg_RFAM_annotated.gtf | sed 's/$/ Gene3in3 \"low\";/' >> data/03_filtering/egg_04FeatureCounts/egg_geneexpr_annotated.gtf
+
+grep -h -f data/03_filtering/egg_04FeatureCounts/egg_transcript_highexpr.txt data/03_filtering/egg_04FeatureCounts/egg_geneexpr_annotated.gtf | sed 's/$/ Transcript3in3 \"high\";/' > data/03_filtering/egg_04FeatureCounts/egg_expr_annotated.gtf
+
+grep -h -f data/03_filtering/egg_04FeatureCounts/egg_transcript_lowexpr.txt data/03_filtering/egg_04FeatureCounts/egg_geneexpr_annotated.gtf | sed 's/$/ Transcript3in3 \"low\";/' >> data/03_filtering/egg_04FeatureCounts/egg_expr_annotated.gtf
+
+sort data/03_filtering/egg_04FeatureCounts/egg_expr_annotated.gtf -o data/03_filtering/egg_04FeatureCounts/egg_expr_annotated.gtf
+```
+
+```{bash blastn-arabidopsis-r-trna}
+cd resources/at_trna_rrna.BLAST
+blastn -query ../../data/02_transcripts/egg_05classified/egg_antint.fasta -db at_trna_rrna -max_target_seqs 1 -outfmt 6 -evalue 1e-5 -out ../../data/03_filtering/egg_05blastn/egg_at_blastn.outfmt6
+
+cd ../solanum.lnc.BLAST
+blastn -query ../../data/02_transcripts/egg_05classified/egg_antint.fasta -db solanum.plncdb -max_target_seqs 1 -outfmt 6 -evalue 1e-5 -out ../../data/03_filtering/egg_05blastn/egg_sol_blastn.outfmt6
+
+grep -o 'MSTRG\.[0/-9]*\.[0/-9]*' data/03_filtering/egg_05blastn/egg_at_blastn.outfmt6 | uniq | sed 's/$/\"/' | sed 's/^/\"/' > data/03_filtering/egg_05blastn/egg_at_trna_rrna.txt
+
+grep -o 'MSTRG\.[0/-9]*\.[0/-9]*' data/03_filtering/egg_05blastn/egg_sol_blastn.outfmt6 | uniq | sed 's/$/\"/' | sed 's/^/\"/' > data/03_filtering/egg_05blastn/egg_sol_lncRNA.txt
+
+grep -h -f data/03_filtering/egg_05blastn/egg_at_trna_rrna.txt data/03_filtering/egg_04FeatureCounts/egg_expr_annotated.gtf | sed 's/$/ Athal blast \"trna or rrna\";/' > data/03_filtering/egg_05blastn/egg_at_annotated.gtf
+
+grep -v -h -f data/03_filtering/egg_05blastn/egg_at_trna_rrna.txt data/03_filtering/egg_04FeatureCounts/egg_expr_annotated.gtf | sed 's/$/ Athal blast \"no hit\";/' >> data/03_filtering/egg_05blastn/egg_at_annotated.gtf
+
+grep -h -f data/03_filtering/egg_05blastn/egg_sol_lncRNA.txt data/03_filtering/egg_05blastn/egg_at_annotated.gtf | sed 's/$/ Solanum blast \"known lncRNA\";/' > data/03_filtering/egg_05blastn/egg_sol_annotated.gtf
+
+grep -v -h -f data/03_filtering/egg_05blastn/egg_sol_lncRNA.txt data/03_filtering/egg_05blastn/egg_at_annotated.gtf | sed 's/$/ Solanum blast \"no hit\";/' >> data/03_filtering/egg_05blastn/egg_sol_annotated.gtf
+
+sort data/03_filtering/egg_05blastn/egg_sol_annotated.gtf -o data/03_filtering/egg_05blastn/egg_sol_annotated.gtf
+```
+
+```{bash filter-for-lncRNA}
+grep "CPC2 \"noncoding\"\|Solanum blast \"known lncRNA\"" data/03_filtering/egg_05blastn/egg_sol_annotated.gtf | grep "TransDecoder \"nonORFs\"\|Solanum blast \"known lncRNA\"" | grep "RFAM \"not known\"\|Solanum blast \"known lncRNA\"" | grep "Gene3in3 \"high\"\|Solanum blast \"known lncRNA\"" | grep "Athal blast \"no hit\"\|Solanum blast \"known lncRNA\"" > data/03_filtering/egg_06lncRNA/egg_lncRNA_transcripts.gtf
+
+grep "\"MSTRG\.[0\-9]*\.1\"" data/02_transcripts/egg_05classified/egg_antint.gtf > data/02_transcripts/egg_05classified/egg_antint_genes.gtf
+
+grep "\"MSTRG\.[0\-9]*\.1\"" data/03_filtering/egg_06lncRNA/egg_lncRNA_transcripts.gtf > data/03_filtering/egg_06lncRNA/egg_lncRNA_genes.gtf
+
+grep "Solanum blast \"known lncRNA\"" data/03_filtering/egg_06lncRNA/egg_lncRNA_transcripts.gtf | grep "CPC2 \"noncoding\"" | grep "TransDecoder \"nonORFs\"" | grep "RFAM \"not known\"" | grep "Gene3in3 \"high\"" | grep "Athal blast \"no hit\"" | wc -l
 ```

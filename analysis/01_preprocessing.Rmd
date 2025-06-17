@@ -44,33 +44,64 @@ set.seed(10202005)
 ```
 
 ```{bash fastp-trimming-egg, eval = FALSE}
-for file in data/00_raw_input_reads/egg/michelle/*R1_001.fastq.gz
-  do
-  base=$(basename "$file")
-  base1=${base%%_001*}
+egg_michlle_trim () {
+  base1=$(basename "$1" _001.fastq.gz)
   base2=${base1/R1/R2}
-  /programs/fastp-0.23.4/fastp -i $file -I ${file/R1/R2} -o data/01_preprocessing/trimmed_reads/egg/${base1}"_trimmed.fastq.gz" -O data/01_preprocessing/trimmed_reads/egg/${base2}"_trimmed.fastq.gz" -h data/01_preprocessing/fastp_reports/egg/michelle/${base1}.html -j /dev/null --thread 16
-  done
-  
+	r2_filename=${1/R1/R2}
+	/programs/fastp-0.23.4/fastp -i "$1" -I "$r2_filename" -o data/01_preprocessing/egg_trimmed_reads/${base1}"_trimmed.fastq.gz" -O data/01_preprocessing/egg_trimmed_reads/${base2}"_trimmed.fastq.gz" -h data/01_preprocessing/egg_fastp_reports/byron/${base1}.html -j /dev/null --thread 16
+}
+export -f egg_michelle_trim
+parallel egg_michelle_trim ::: data/00_raw_input_reads/egg/michelle/*R1.fastq.gz
+
 egg_byron_trim () {
   base1=$(basename "$1" .fastq.gz)
   base2=${base1/R1/R2}
 	r2_filename=${1/R1/R2}
-	/programs/fastp-0.23.4/fastp -i $1 -I $r2_filename -o data/01_preprocessing/trimmed_reads/egg/${base1}"_trimmed.fastq.gz" -O data/01_preprocessing/trimmed_reads/egg/${base2}"_trimmed.fastq.gz" -h data/01_preprocessing/fastp_reports/egg/byron/${base1}.html -j /dev/null --thread 16
+	/programs/fastp-0.23.4/fastp -i "$1" -I "$r2_filename" -o data/01_preprocessing/egg_trimmed_reads/${base1}"_trimmed.fastq.gz" -O data/01_preprocessing/egg_trimmed_reads/${base2}"_trimmed.fastq.gz" -h data/01_preprocessing/egg_fastp_reports/byron/${base1}.html -j /dev/null --thread 16
 }
 export -f egg_byron_trim
 parallel egg_byron_trim ::: data/00_raw_input_reads/egg/byron/*R1.fastq.gz
 ```
 
-```{bash salmon-strandedness, eval = FALSE}
-salmon index -t resources/eggplant_transcriptome.fasta -i eggsalmon_index
-
-for r1_filename in data/01_preprocessing/trimmed_reads/egg/*trimmed.fastq.gz
-	do
-	base=$(basename $r1_filename _R1_trimmed.fastq.gz)
-	r2_filename=${r1_filename/R1/R2}
-	/programs/salmon-1.10.0/bin/salmon quant -l A -1 $r1_filename -2 $r2_filename -i eggplant_salmonindex -o data/01_preprocessing/salmon_detection/${base}_quant
-	done
+```{bash fastp-trimming-tom, eval = FALSE}
+tom_michelle_trim () {
+  base1=$(basename "$1" _001.fastq.gz)
+  base2=${base1/R1/R2}
+	r2_filename=${1/R1/R2}
+	/programs/fastp-0.23.4/fastp -i "$1" -I "$r2_filename" -o data/01_preprocessing/tom_trimmed_reads/${base1}"_trimmed.fastq.gz" -O data/01_preprocessing/tom_trimmed_reads/${base2}"_trimmed.fastq.gz" -h data/01_preprocessing/tom_fastp_reports/michelle/${base1}.html -j /dev/null --thread 24
+}
+export -f tom_michelle_trim
+parallel tom_michelle_trim ::: data/00_raw_input_reads/tom/michelle/*R1_001.fastq.gz
 ```
 
-Ran with Fastp-0.23.4 and Salmon 1.10.2
+```{bash salmon-strandedness-egg, eval = FALSE}
+/programs/salmon-1.10.0/bin/salmon index -t resources/eggplant_transcriptome.fasta -i resources/egg_salmon_index
+
+egg_salmon () {
+  base=$(basename $1 _R1_trimmed.fastq.gz)
+	r2_filename=${1/R1/R2}
+	/programs/salmon-1.10.0/bin/salmon quant -l A -1 $1 -2 $r2_filename -i resources/egg_salmon_index --validateMappings -o data/01_preprocessing/egg_strand_detection/${base}_quant
+}
+export -f egg_salmon
+parallel egg_salmon ::: data/01_preprocessing/egg_trimmed_reads/*R1*
+```
+
+# Michelle eggplant dataset Automatically detected most likely library type as ISF
+
+# Byron eggplant dataset Automatically detected most likely library type as ISR
+
+```{bash salmon-strandedness-tom, eval = FALSE}
+/programs/salmon-1.10.0/bin/salmon index -t resources/tomato_transcriptome.fasta -i resources/tom_salmon_index
+
+tom_salmon () {
+  base=$(basename $1 _R1_trimmed.fastq.gz)
+	r2_filename=${1/R1/R2}
+	/programs/salmon-1.10.0/bin/salmon quant -l A -1 $1 -2 $r2_filename -i resources/tom_salmon_index --validateMappings -o data/01_preprocessing/tom_strand_detection/${base}_quant
+}
+export -f tom_salmon
+parallel tom_salmon ::: data/01_preprocessing/tom_trimmed_reads/*R1*
+```
+
+# Michelle tomato dataset Automatically detected most likely library type as ISF
+
+# Dr. Frank tomato dataset 

@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+
+# Added by cargo
+
+/target
+/resources
+/data/00_raw_input_reads
+/data/01_preprocessing

@@ -11,6 +11,8 @@ mir-166              RF00075   MSTRG.5427.1         -          cm        1      
 mir-166              RF00075   MSTRG.5427.1         -          cm        1      126      276      133      -    no    1 0.37   0.0   47.1   4.1e-10 !   mir-166 microRNA precursor
 U4atac               RF00618   MSTRG.5761.1         -          cm        9      133        1      139      +    5'    2 0.56   0.0   27.9    0.0054 !   U4atac minor spliceosomal RNA
 U2                   RF00004   MSTRG.5948.1         -          cm        1      193      222      371      +    no    1 0.35   0.5   30.6   0.00098 !   U2 spliceosomal RNA
+MIR6224              RF04147   MSTRG.6010.1         -          cm        1      176      904     1150      +    no    1 0.37   1.2   29.5    0.0039 !   MIR6224 microRNA precursor family
+MIR6224              RF04147   MSTRG.6010.2         -          cm        1      176     1120     1366      +    no    1 0.37   1.2   29.5     0.003 !   MIR6224 microRNA precursor family
 MIR473               RF00778   MSTRG.6199.1         -          cm        1       95      155      249      +    no    1 0.45   0.0   52.6   4.6e-10 !   microRNA MIR473
 MIR473               RF00778   MSTRG.6199.1         -          cm        1       95      250      156      -    no    1 0.45   0.0   40.9   6.1e-07 !   microRNA MIR473
 MIR477               RF00780   MSTRG.6199.1         -          cm        1       99      153      251      +    no    1 0.44   0.0   38.8   9.1e-07 !   microRNA MIR477
@@ -36,9 +38,13 @@ SSU_rRNA_bacteria      RF00177   MSTRG.7128.1         -          cm     1146    
 SSU_rRNA_archaea       RF01959   MSTRG.7128.1         -          cm     1101     1313        1      214      + 5'&3'    4 0.58   0.0  152.6   2.1e-43 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.7128.1         -          cm     1417     1637        1      214      + 5'&3'    4 0.58   0.0   98.4   9.7e-28 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.7128.1         -          cm      974     1160        1      214      + 5'&3'    4 0.58   0.0   55.1   6.5e-15 !   Microsporidia small subunit ribosomal RNA
+mir-1277             RF04154   MSTRG.7170.1         -          cm        1       78     1419     1492      +    no    1 0.07  32.0   29.2    0.0079 !   mir-1277 microRNA precursor family
 mir-297              RF04217   MSTRG.7532.1         -          cm        1       71      500      568      +    no    1 0.30   0.1   43.0   4.1e-06 !   mir-297 microRNA precursor family
 mir-297              RF04217   MSTRG.7532.1         -          cm        1       71      565      523      -    no    1 0.23   0.0   32.6    0.0014 !   mir-297 microRNA precursor family
 mir-466              RF04052   MSTRG.7532.1         -          cm        1       80      516      568      +    no    1 0.26   0.0   28.2    0.0047 !   mir-466 microRNA precursor family
+tRNA                 RF00005   MSTRG.7740.1         -          cm        1       71     1248     1321      +    no    1 0.46   0.0   60.5   3.4e-12 !   tRNA
+tRNA                 RF00005   MSTRG.7740.1         -          cm        1       71     1581     1655      +    no    1 0.55   0.0   60.4   3.7e-12 !   tRNA
+tRNA                 RF00005   MSTRG.7740.1         -          cm        1       71      798      885      +    no    1 0.45   0.0   55.0   1.2e-10 !   tRNA
 mir-1277             RF04154   MSTRG.7902.1         -          cm        1       78     1274     1350      +    no    1 0.10  24.0   34.4    0.0004 !   mir-1277 microRNA precursor family
 MIR169_2             RF00645   MSTRG.7924.1         -          cm       73      134        1       62      +    5'    2 0.47   0.0   24.1    0.0015 !   microRNA MIR169_2
 MIR169_2             RF00645   MSTRG.7924.2         -          cm       73      134        1       62      +    5'    2 0.47   0.0   24.1    0.0015 !   microRNA MIR169_2
@@ -52,10 +58,12 @@ mir-297              RF04217   MSTRG.8145.3         -          cm        1      
 mir-297              RF04217   MSTRG.8145.4         -          cm        1       71     2954     3022      +    no    1 0.20   9.6   43.9   1.1e-05 !   mir-297 microRNA precursor family
 mir-297              RF04217   MSTRG.8145.5         -          cm        1       71     2954     3022      +    no    1 0.20   9.6   43.9   1.1e-05 !   mir-297 microRNA precursor family
 mir-297              RF04217   MSTRG.8145.6         -          cm        1       71     2954     3022      +    no    1 0.20   9.6   43.9   1.1e-05 !   mir-297 microRNA precursor family
+MIR8007              RF04127   MSTRG.8260.1         -          cm        1      226      888      671      -    no    1 0.29  16.3   55.9   4.8e-09 !   MIR8007 microRNA precursor family
 MIR5298              RF03794   MSTRG.8301.1         -          cm        1       88      113       69      -    no    1 0.31   0.0   36.5    0.0015 !   MIR5298 microRNA precursor family
 sR43                 RF01128   MSTRG.8305.1         -         hmm        4       30       67       41      -     -    6 0.44   0.1   18.5    0.0016 !   Small nucleolar RNA sR42
 MIR6445              RF03933   MSTRG.8326.1         -          cm        1      117      142       46      -    no    1 0.35   0.2   31.3     0.001 !   MIR6445 microRNA precursor family
 MIR6445              RF03933   MSTRG.8353.1         -          cm        1      117      143       47      -    no    1 0.35   0.2   31.3    0.0011 !   MIR6445 microRNA precursor family
+U6                   RF00026   MSTRG.8393.1         -          cm        1      104      818      716      -    no    1 0.33   0.0   34.5   1.1e-05 !   U6 spliceosomal RNA
 mir-297              RF04217   MSTRG.8398.1         -          cm        1       71     2024     2090      +    no    1 0.25   0.5   38.1   0.00024 !   mir-297 microRNA precursor family
 mir-297              RF04217   MSTRG.8398.2         -          cm        1       71     1972     2038      +    no    1 0.25   0.5   38.1   0.00023 !   mir-297 microRNA precursor family
 LSU_rRNA_bacteria    RF02541   MSTRG.8524.1         -          cm     2048     2384        5      345      +    3'    4 0.57   0.0  242.4   7.3e-79 !   Bacterial large subunit ribosomal RNA
@@ -64,7 +72,11 @@ LSU_rRNA_eukarya     RF02543   MSTRG.8524.1         -          cm     2359     2
 U1                   RF00003   MSTRG.8533.1         -          cm        5      166        1      157      +    5'    2 0.56   0.0  135.5   1.3e-36 !   U1 spliceosomal RNA
 snoR136              RF02410   MSTRG.8703.1         -          cm        1      152      435      571      +    no    1 0.35   0.8   63.1   6.2e-10 !   Small nucleolar RNA snoR136
 SNORD25              RF00054   MSTRG.8703.1         -          cm        1       87      314      407      +    no    1 0.34   0.0   51.8   7.1e-10 !   Small nucleolar RNA SNORD25
+rimP                 RF01770   MSTRG.8870.3         -          cm        1      111     2483     2363      -    no    1 0.31   0.5   38.6   0.00087 !   Gammaprotebacteria rimP leader
+mir-297              RF04217   MSTRG.8931.1         -          cm        1       71      472      541      +    no    1 0.29   3.0   42.1   1.5e-05 !   mir-297 microRNA precursor family
+SCARNA7              RF01295   MSTRG.8931.1         -          cm        1      330      390      584      +    no    1 0.33   5.1   22.9     0.007 !   Small Cajal body-specific RNA 7
 mir-1277             RF04154   MSTRG.9205.1         -          cm        1       78      774      839      +    no    1 0.14  12.5   29.5    0.0038 !   mir-1277 microRNA precursor family
+RMST_7               RF01968   MSTRG.9304.1         -         hmm       36      234      212        4      -     -    6 0.37   3.0   19.1    0.0044 !   Rhabdomyosarcoma 2 associated transcript conserved region 7
 SSU_rRNA_bacteria      RF00177   MSTRG.9441.1         -          cm      477      936        1      461      + 5'&3'    4 0.54   0.1  440.6  7.3e-139 !   Bacterial small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.9441.1         -          cm      426      892        1      461      + 5'&3'    4 0.54   0.1  329.7   5.1e-96 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.9441.1         -          cm      361      814        1      461      + 5'&3'    4 0.54   0.1  212.8   1.3e-63 !   Microsporidia small subunit ribosomal RNA
@@ -112,6 +124,8 @@ MIR1862              RF04136   MSTRG.9690.1         -          cm        1      
 MIR6020              RF03351   MSTRG.9690.1         -          cm        1      110     1121     1224      +    no    1 0.34   0.0   40.5   3.1e-06 !   MIR6020 microRNA precursor family
 LSU_rRNA_bacteria    RF02541   MSTRG.10102.1        -          cm     1304     1495        2      203      +    3'    4 0.51   0.0   52.9   1.3e-15 !   Bacterial large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.10102.1        -          cm     1389     1599        1      203      + 5'&3'    4 0.51   0.0   19.9   0.00031 !   Archaeal large subunit ribosomal RNA
+tRNA                 RF00005   MSTRG.10290.1        -          cm        1       71     1461     1389      -    no    1 0.58   0.0   63.4   2.9e-13 !   tRNA
+tRNA                 RF00005   MSTRG.10290.2        -          cm        1       71     1450     1378      -    no    1 0.58   0.0   63.4   2.9e-13 !   tRNA
 U2                   RF00004   MSTRG.10349.1        -          cm        1      193        3      194      +    no    1 0.44   0.0  160.7   2.3e-35 !   U2 spliceosomal RNA
 RFPL3-AS1_2          RF02172   MSTRG.10401.1        -         hmm       21       55      302      268      -     -    6 0.46   0.6   19.3    0.0027 !   RFPL3 antisense RNA 1 conserved region 2
 tRNA                 RF00005   MSTRG.10842.1        -          cm        1       71       19      102      +    no    1 0.56   0.0   64.0   2.6e-14 !   tRNA
@@ -137,7 +151,10 @@ U2                   RF00004   MSTRG.11891.1        -          cm        1      
 U11                  RF00548   MSTRG.12104.1        -          cm        1      137       54      176      +    no    1 0.50   0.0   63.8   5.3e-11 !   U11 spliceosomal RNA
 U11                  RF00548   MSTRG.12104.2        -          cm        3      137        1      121      +    5'    2 0.51   0.0   54.0   6.6e-09 !   U11 spliceosomal RNA
 Plant_SRP            RF01855   MSTRG.12331.1        -          cm        1      305     1620     1511      -    no    1 0.39   0.0   46.8   5.6e-11 !   Plant signal recognition particle RNA
+wcaG                 RF01761   MSTRG.12438.1        -          cm        1       98     3812     3882      +    no    1 0.28   0.2   32.4    0.0028 !   wcaG RNA
 twister-P1           RF03160   MSTRG.12478.1        -          cm        8       59     1022      969      -    no    1 0.54   0.0   31.7   0.00016 !   type-P1 twister ribozyme
+twister-P1           RF03160   MSTRG.12481.1        -          cm        8       59     1035      982      -    no    1 0.56   0.0   38.4   1.7e-06 !   type-P1 twister ribozyme
+twister-P1           RF03160   MSTRG.12481.2        -          cm        8       59      984      931      -    no    1 0.56   0.0   38.4   1.7e-06 !   type-P1 twister ribozyme
 twister-P1           RF03160   MSTRG.12483.1        -          cm        1       67     1044      977      -    no    1 0.47   0.0   40.5   4.4e-07 !   type-P1 twister ribozyme
 snoR8a               RF01284   MSTRG.12855.1        -          cm        1       92      183      271      +    no    1 0.39   0.0   93.1   1.4e-18 !   Small nucleolar RNA snoR8a
 LSU_rRNA_bacteria    RF02541   MSTRG.12904.1        -          cm      731     1743        1     1040      + 5'&3'    4 0.53  11.4  735.8  1.1e-243 !   Bacterial large subunit ribosomal RNA
@@ -149,11 +166,17 @@ LSU_rRNA_eukarya     RF02543   MSTRG.12921.3        -          cm        1     1
 enod40               RF01845   MSTRG.13047.1        -          cm        1      269      128      481      +    no    1 0.38   2.9  119.1   2.6e-24 !   Early nodulin 40
 enod40               RF01845   MSTRG.13047.2        -          cm        1      269      113      466      +    no    1 0.38   2.9  119.1   2.5e-24 !   Early nodulin 40
 enod40               RF01845   MSTRG.13047.3        -          cm        1      269       99      452      +    no    1 0.38   2.9  119.1   2.5e-24 !   Early nodulin 40
+mir-297              RF04217   MSTRG.13172.1        -          cm        1       71      301      235      -    no    1 0.16  14.8   41.3   1.7e-05 !   mir-297 microRNA precursor family
+mir-297              RF04217   MSTRG.13172.2        -          cm        1       71      301      235      -    no    1 0.16  14.8   41.3   1.7e-05 !   mir-297 microRNA precursor family
 LSU_rRNA_bacteria    RF02541   MSTRG.13229.1        -          cm      296      511        1      212      +    5'    4 0.53   0.0  145.1   1.8e-46 !   Bacterial large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.13229.1        -          cm      289      503        1      212      +    5'    4 0.53   0.0   84.9   5.6e-25 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.13229.1        -          cm      149      363        1      214      + 5'&3'    4 0.53   0.0   45.5   4.6e-10 !   Eukaryotic large subunit ribosomal RNA
+mir-297              RF04217   MSTRG.13437.1        -          cm        1       71      652      586      -    no    1 0.12  17.2   33.3    0.0012 !   mir-297 microRNA precursor family
+mir-297              RF04217   MSTRG.13437.1        -          cm        1       71      587      652      +    no    1 0.12  16.3   29.7    0.0085 !   mir-297 microRNA precursor family
 mir-297              RF04217   MSTRG.13437.2        -          cm        1       71      652      586      -    no    1 0.12  17.2   33.3   0.00091 !   mir-297 microRNA precursor family
 mir-297              RF04217   MSTRG.13437.2        -          cm        1       71      587      652      +    no    1 0.12  16.3   29.7    0.0066 !   mir-297 microRNA precursor family
+SSU_rRNA_eukarya       RF01960   MSTRG.13508.1        -          cm       42      466     1412      973      -    no    1 0.45   7.9  169.1   3.3e-48 !   Eukaryotic small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.13508.1        -          cm       41      325     1333      973      -    no    1 0.48   0.4  124.3   2.9e-35 !   Microsporidia small subunit ribosomal RNA
 mir-399              RF00445   MSTRG.13528.1        -          cm        1      118       34      148      +    no    1 0.43   0.0   56.1   1.5e-13 !   mir-399 microRNA precursor family
 mir-399              RF00445   MSTRG.13528.1        -          cm        1      118      148       34      -    no    1 0.43   0.0   41.6   5.5e-09 !   mir-399 microRNA precursor family
 SCARNA7              RF01295   MSTRG.13606.1        -          cm        1      330      313      444      +    no    1 0.29   6.0   22.5    0.0041 !   Small Cajal body-specific RNA 7
@@ -177,6 +200,7 @@ MIR1446              RF00954   MSTRG.14987.1        -          cm        1      
 MIR1446              RF00954   MSTRG.14987.1        -          cm        1      105      858      774      -    no    1 0.45   0.0   28.8    0.0009 !   MIR1446 microRNA precursor family
 MIR781               RF03583   MSTRG.14987.1        -          cm        1       94      769      864      +    no    1 0.44   0.0   29.3    0.0043 !   MIR781 microRNA precursor family
 MIR477               RF00780   MSTRG.14990.1        -          cm        1       99       28      202      +    no    1 0.34   0.2   46.7   1.2e-08 !   microRNA MIR477
+mir-622              RF03969   MSTRG.15053.1        -          cm        1       72      614      665      +    no    1 0.48   0.0   29.8   0.00045 !   mir-622 microRNA precursor family
 mir-622              RF03969   MSTRG.15053.2        -          cm        1       72      614      665      +    no    1 0.48   0.0   29.8   0.00034 !   mir-622 microRNA precursor family
 mir-156              RF00073   MSTRG.15084.1        -          cm        1       88      136      237      +    no    1 0.37   0.0   36.8   4.5e-05 !   mir-156 microRNA precursor
 MIR529               RF00908   MSTRG.15084.1        -          cm        1      131      127      248      +    no    1 0.39   0.0   28.5    0.0016 !   microRNA MIR529
@@ -231,6 +255,12 @@ SSU_rRNA_eukarya       RF01960   MSTRG.16357.1        -          cm      339    
 SSU_rRNA_microsporidia RF02542   MSTRG.16357.1        -          cm      198     1192        1     1302      + 5'&3'    4 0.49   0.0  609.4  1.9e-186 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.16357.1        -          cm      247     1345        1     1302      + 5'&3'    4 0.49   0.0  470.4  1.2e-137 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.16357.1        -          cm      263     1390        1     1302      + 5'&3'    4 0.49   0.0  374.6  3.2e-117 !   Bacterial small subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.16359.1        -          cm        1      469        1      467      +    3'    3 0.58   6.7  365.1   6.5e-98 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.16359.1        -          cm      147      553        1      409      +    5'    4 0.56   0.7  185.4   1.1e-56 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.16359.1        -          cm      165      562        1      408      +    5'    4 0.56   0.6  162.2   7.4e-52 !   Bacterial large subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.16360.1        -          cm     1883     2500        1      620      + 5'&3'    4 0.54   0.0  643.0  1.8e-174 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.16360.1        -          cm     1779     2280        1      620      + 5'&3'    4 0.54   0.0  281.0   4.4e-87 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.16360.1        -          cm     1683     2203        1      620      + 5'&3'    4 0.54   0.0  233.8   9.7e-76 !   Bacterial large subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.16361.1        -          cm        1      231       12      240      +    3'    3 0.41   0.0  185.4   2.8e-54 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.16361.1        -          cm        1      177       12      240      +    3'    3 0.41   0.0   53.2     3e-14 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.16363.1        -          cm      392     1669        1     1249      + 5'&3'    4 0.49   0.0 1205.0         0 !   Eukaryotic small subunit ribosomal RNA
@@ -266,14 +296,52 @@ SSU_rRNA_eukarya       RF01960   MSTRG.16373.1        -          cm       12    
 SSU_rRNA_microsporidia RF02542   MSTRG.16373.1        -          cm        1     1311        7     1652      +    no    1 0.49   0.0  698.4  5.1e-214 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.16373.1        -          cm       12     1399        1     1691      + 5'&3'    4 0.50   0.0  541.0  1.2e-158 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.16373.1        -          cm       17     1445        1     1691      + 5'&3'    4 0.50   0.0  445.7  6.2e-140 !   Bacterial small subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.16374.1        -          cm        1     3395        2     3390      +    3'    3 0.57  59.6 3246.2         0 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.16374.1        -          cm      130     2987        1     3178      +    5'    2 0.57  53.7 1395.1         0 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.16374.1        -          cm      160     2925        1     3181      +    5'    2 0.57  54.0 1126.1         0 !   Bacterial large subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.16375.1        -          cm        1     1831        5     1820      +    no    1 0.50   0.0 1739.0         0 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.16375.1        -          cm        1     1311        5     1820      +    no    1 0.50   0.0  805.9  2.2e-247 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.16375.1        -          cm        1     1477        5     1823      +    no    1 0.50   0.0  609.6  4.2e-179 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.16375.1        -          cm        1     1533        1     1825      +    no    1 0.50   0.0  506.1  2.9e-159 !   Bacterial small subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.16376.1        -          cm        1     3401        2     3183      +    no    1 0.57  55.0 3101.8         0 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.16376.1        -          cm      130     2987        1     3192      +    5'    2 0.57  55.3 1351.1         0 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.16376.1        -          cm      160     2925        1     3195      +    5'    2 0.57  55.6 1099.2         0 !   Bacterial large subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.16377.1        -          cm        1     1831       92     1908      +    no    1 0.50   0.0 1736.6         0 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.16377.1        -          cm        1     1311       92     1908      +    no    1 0.50   0.0  812.3  2.3e-249 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.16377.1        -          cm        1     1477       92     1911      +    no    1 0.50   0.0  613.8  2.4e-180 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.16377.1        -          cm        1     1533       87     1913      +    no    1 0.50   0.0  516.7  1.1e-162 !   Bacterial small subunit ribosomal RNA
+LSU_rRNA_eukarya       RF02543   MSTRG.16378.1        -          cm        1     3401     3000     6323      +    no    1 0.57  53.7 3084.1         0 !   Eukaryotic large subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.16378.1        -          cm        1     1831      594     2401      +    no    1 0.50   0.0 1794.2         0 !   Eukaryotic small subunit ribosomal RNA
+LSU_rRNA_archaea       RF02540   MSTRG.16378.1        -          cm        1     2987     2904     6108      +    no    1 0.57  53.4 1295.0         0 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria      RF02541   MSTRG.16378.1        -          cm        1     2925     2620     6159      +    no    1 0.58  68.6 1069.1         0 !   Bacterial large subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.16378.1        -          cm        1     1311      594     2401      +    no    1 0.50   0.0  839.3    3e-257 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.16378.1        -          cm        1     1477      594     2404      +    no    1 0.50   0.0  646.0  1.8e-189 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.16378.1        -          cm        1     1533      589     2406      +    no    1 0.50   0.0  542.6  1.9e-170 !   Bacterial small subunit ribosomal RNA
+5_8S_rRNA              RF00002   MSTRG.16378.1        -          cm        1      154     2632     2787      +    no    1 0.56   0.0  145.2   6.1e-38 !   5.8S ribosomal RNA
+LSU_rRNA_eukarya       RF02543   MSTRG.16379.1        -          cm        1     3395     2517     5900      +    3'    3 0.57  57.4 3332.9         0 !   Eukaryotic large subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.16379.1        -          cm        1     1831      111     1918      +    no    1 0.50   0.0 1794.2         0 !   Eukaryotic small subunit ribosomal RNA
+LSU_rRNA_archaea       RF02540   MSTRG.16379.1        -          cm        1     2987     2421     5689      +    no    1 0.57  55.9 1435.5         0 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria      RF02541   MSTRG.16379.1        -          cm        1     2925     2137     5740      +    no    1 0.58  70.8 1193.6         0 !   Bacterial large subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.16379.1        -          cm        1     1311      111     1918      +    no    1 0.50   0.0  839.3  2.8e-257 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.16379.1        -          cm        1     1477      111     1921      +    no    1 0.50   0.0  646.0  1.7e-189 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.16379.1        -          cm        1     1533      106     1923      +    no    1 0.50   0.0  542.6  1.7e-170 !   Bacterial small subunit ribosomal RNA
+5_8S_rRNA              RF00002   MSTRG.16379.1        -          cm        1      154     2149     2304      +    no    1 0.56   0.0  145.2   5.7e-38 !   5.8S ribosomal RNA
+LSU_rRNA_eukarya       RF02543   MSTRG.16380.1        -          cm        1     3395     2407     5790      +    3'    3 0.57  57.1 3333.6         0 !   Eukaryotic large subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.16380.1        -          cm        1     1831        1     1808      +    no    1 0.50   0.0 1794.2         0 !   Eukaryotic small subunit ribosomal RNA
+LSU_rRNA_archaea       RF02540   MSTRG.16380.1        -          cm        1     2987     2311     5579      +    no    1 0.57  55.5 1436.3         0 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria      RF02541   MSTRG.16380.1        -          cm        1     2925     2027     5630      +    no    1 0.58  70.3 1194.6         0 !   Bacterial large subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.16380.1        -          cm        1     1311        1     1808      +    no    1 0.50   0.0  839.3  2.8e-257 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.16380.1        -          cm        1     1477        1     1811      +    no    1 0.50   0.0  646.0  1.7e-189 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.16380.1        -          cm        1     1533        1     1813      +    no    1 0.50   0.0  535.0  4.4e-168 !   Bacterial small subunit ribosomal RNA
+5_8S_rRNA              RF00002   MSTRG.16380.1        -          cm        1      154     2039     2194      +    no    1 0.56   0.0  145.2   5.5e-38 !   5.8S ribosomal RNA
+LSU_rRNA_eukarya       RF02543   MSTRG.16381.1        -          cm        1     3398     2833     6219      +    3'    3 0.57  56.2 3334.8         0 !   Eukaryotic large subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.16381.1        -          cm        1     1831      427     2234      +    no    1 0.50   0.0 1794.2         0 !   Eukaryotic small subunit ribosomal RNA
+LSU_rRNA_archaea       RF02540   MSTRG.16381.1        -          cm        1     2987     2737     6005      +    no    1 0.57  55.4 1432.3         0 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria      RF02541   MSTRG.16381.1        -          cm        1     2925     2453     6056      +    no    1 0.58  70.3 1190.8         0 !   Bacterial large subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.16381.1        -          cm        1     1311      427     2234      +    no    1 0.50   0.0  839.3    3e-257 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.16381.1        -          cm        1     1477      427     2237      +    no    1 0.50   0.0  646.0  1.8e-189 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.16381.1        -          cm        1     1533      422     2239      +    no    1 0.50   0.0  542.6  1.8e-170 !   Bacterial small subunit ribosomal RNA
+5_8S_rRNA              RF00002   MSTRG.16381.1        -          cm        1      154     2465     2620      +    no    1 0.56   0.0  145.2     6e-38 !   5.8S ribosomal RNA
 mir-297              RF04217   MSTRG.16641.1        -          cm        1       71      250      310      +    no    1 0.21   0.8   31.9     0.001 !   mir-297 microRNA precursor family
 lincRNA-p21_1        RF01889   MSTRG.16876.1        -         hmm       34      144       21      125      +     -    6 0.39   0.0   19.9    0.0019 !   LincRNA-p21 conserved region 1
 snoZ221_snoR21b      RF00300   MSTRG.16897.1        -          cm        1       91       85      171      +    no    1 0.40   0.0   68.5   1.5e-14 !   Small nucleolar RNA Z221/R21b
@@ -283,6 +351,8 @@ MIR2118_2            RF04185   MSTRG.16897.1        -          cm        1      
 MIR6224              RF04147   MSTRG.16919.1        -          cm        1      176      903      668      -    no    1 0.36   1.8   30.9   0.00066 !   MIR6224 microRNA precursor family
 RNase_MRP            RF00030   MSTRG.17063.1        -          cm        1      266        1      269      +    no    1 0.49   0.0   82.9   1.5e-22 !   RNase MRP
 RNase_MRP            RF00030   MSTRG.17066.1        -          cm        1      266       14      280      +    no    1 0.51   0.0   81.6   4.3e-22 !   RNase MRP
+U2                   RF00004   MSTRG.17226.1        -          cm        1      193      323      438      +    no    1 0.28   5.8   29.6    0.0022 !   U2 spliceosomal RNA
+U2                   RF00004   MSTRG.17226.2        -          cm        1      193      323      438      +    no    1 0.28   5.8   29.6    0.0022 !   U2 spliceosomal RNA
 Plant_SRP            RF01855   MSTRG.17257.1        -          cm        1      305      160      410      +    no    1 0.51   0.0   18.4    0.0068 !   Plant signal recognition particle RNA
 snoR8a               RF01284   MSTRG.17516.1        -          cm        1       92      146      234      +    no    1 0.43   0.0   92.7   2.3e-18 !   Small nucleolar RNA snoR8a
 SNORD25              RF00054   MSTRG.17516.1        -          cm        1       87      392      476      +    no    1 0.40   0.0   66.8   3.8e-14 !   Small nucleolar RNA SNORD25
@@ -310,6 +380,7 @@ MIR394               RF00688   MSTRG.18025.1        -          cm        1      
 mir-172              RF00452   MSTRG.18509.1        -          cm        1      119      166      279      +    no    1 0.38   0.0   87.3   4.9e-20 !   mir-172 microRNA precursor family
 mir-172              RF00452   MSTRG.18509.1        -          cm        1      119      279      166      -    no    1 0.38   0.0   70.4   2.2e-15 !   mir-172 microRNA precursor family
 mir-186              RF00697   MSTRG.18509.1        -          cm        1       82      184      258      +    no    1 0.32   0.0   27.8    0.0079 !   microRNA mir-186
+mir-3910             RF03578   MSTRG.18783.1        -          cm        1       82     1028      967      -    no    1 0.40   0.0   28.6    0.0033 !   mir-3910 microRNA precursor family
 SSU_rRNA_bacteria    RF00177   MSTRG.18799.1        -          cm        1     1123      359        1      -    3'    3 0.34  13.3   83.9   9.2e-24 !   Bacterial small subunit ribosomal RNA
 SSU_rRNA_eukarya     RF01960   MSTRG.18799.1        -          cm     1118     1335      212        1      -    3'    4 0.40   0.0   36.6   6.5e-08 !   Eukaryotic small subunit ribosomal RNA
 snoR137              RF01433   MSTRG.19027.1        -          cm        1      146      276      410      +    no    1 0.39   0.0  100.1   7.1e-19 !   small nucleolar RNA snoR137
@@ -329,10 +400,27 @@ SSU_rRNA_bacteria      RF00177   MSTRG.19642.1        -          cm      504    
 SSU_rRNA_archaea       RF01959   MSTRG.19642.1        -          cm      454      731        1      277      + 5'&3'    4 0.55   0.1  179.2   3.1e-51 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.19642.1        -          cm      389      663        1      277      + 5'&3'    4 0.55   0.1  100.9   5.1e-29 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.19642.1        -          cm      563     1010        1      277      + 5'&3'    4 0.55   0.1   55.8   1.3e-14 !   Eukaryotic small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.19643.1        -          cm      286      606        1      305      + 5'&3'    4 0.55   0.0  277.9   8.4e-87 !   Bacterial small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.19643.1        -          cm      268      556        1      305      + 5'&3'    4 0.55   0.0  134.9   5.9e-38 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.19643.1        -          cm      219      491        1      305      + 5'&3'    4 0.55   0.0   73.5   1.8e-20 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.19643.1        -          cm      360      665        1      305      + 5'&3'    4 0.55   0.0   66.3   9.1e-18 !   Eukaryotic small subunit ribosomal RNA
 tRNA                 RF00005   MSTRG.19645.1        -          cm        1       71      107       20      -    no    1 0.52   0.0   66.6   7.7e-15 !   tRNA
 tRNA-Sec             RF01852   MSTRG.19645.1        -          cm        1       91      107       21      -    no    1 0.52   0.0   39.5   1.2e-06 !   Selenocysteine transfer RNA
 MIR8007              RF04127   MSTRG.19663.1        -          cm        1      226     1681     1504      -    no    1 0.24  21.0   27.7    0.0096 !   MIR8007 microRNA precursor family
+mir-322              RF00737   MSTRG.19804.1        -          cm        1       84     2699     2784      +    no    1 0.35   0.0   30.6    0.0038 !   microRNA mir-322
+mir-322              RF00737   MSTRG.19804.2        -          cm        1       84     2202     2287      +    no    1 0.35   0.0   30.6    0.0035 !   microRNA mir-322
+mir-322              RF00737   MSTRG.19804.3        -          cm        1       84     1195     1280      +    no    1 0.35   0.0   30.6   0.00079 !   microRNA mir-322
 U6                   RF00026   MSTRG.19814.1        -          cm        1      104       97      199      +    no    1 0.46   0.0  108.3   5.2e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.1        -          cm        1      104      126      228      +    no    1 0.47   0.0  110.0   7.7e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.2        -          cm        1      104       94      196      +    no    1 0.47   0.0  110.0   7.6e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.3        -          cm        1      104       94      196      +    no    1 0.47   0.0  110.0   7.6e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.4        -          cm        1      104       93      195      +    no    1 0.47   0.0  110.0   8.6e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.5        -          cm        1      104       75      177      +    no    1 0.47   0.0  110.0   7.5e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.6        -          cm        1      104       75      177      +    no    1 0.47   0.0  110.0   7.5e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.7        -          cm        1      104       73      175      +    no    1 0.47   0.0  110.0   8.5e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.8        -          cm        1      104       73      175      +    no    1 0.47   0.0  110.0   8.5e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.9        -          cm        1      104       59      161      +    no    1 0.47   0.0  110.0   7.5e-28 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.19817.10       -          cm        1      104       49      151      +    no    1 0.47   0.0  110.0   7.4e-28 !   U6 spliceosomal RNA
 U6                   RF00026   MSTRG.19833.1        -          cm        1      104       99      201      +    no    1 0.47   0.0  110.0   1.7e-27 !   U6 spliceosomal RNA
 U6                   RF00026   MSTRG.19833.2        -          cm        1      104       99      201      +    no    1 0.47   0.0  110.0   1.6e-27 !   U6 spliceosomal RNA
 U6                   RF00026   MSTRG.19833.3        -          cm        1      104       99      201      +    no    1 0.47   0.0  110.0   1.6e-27 !   U6 spliceosomal RNA
@@ -352,7 +440,22 @@ MIR394               RF00688   MSTRG.20165.1        -          cm        1      
 MIR394               RF00688   MSTRG.20165.2        -          cm        1      111      106      207      +    no    1 0.41   0.0   96.6   3.3e-21 !   microRNA MIR394
 MIR394               RF00688   MSTRG.20165.2        -          cm        1      111      207      106      -    no    1 0.41   0.0   58.7   3.4e-11 !   microRNA MIR394
 MIR1122              RF00906   MSTRG.20189.1        -          cm        1      135     1299     1421      +    no    1 0.32   0.2   32.7   0.00052 !   microRNA MIR1122
+snoZ103              RF00149   MSTRG.20246.1        -          cm        1      100     3316     3423      +    no    1 0.38   0.0   85.9   2.2e-17 !   Small nucleolar RNA Z103
+snoR143              RF01432   MSTRG.20246.1        -          cm        1      169     1623     1795      +    no    1 0.42   0.0   92.5   3.3e-17 !   small nucleolar RNA snoR143
+snoZ103              RF00149   MSTRG.20246.1        -          cm        1      100      993     1100      +    no    1 0.37   0.0   84.5   4.9e-17 !   Small nucleolar RNA Z103
+snoZ103              RF00149   MSTRG.20246.1        -          cm        1      100     2458     2565      +    no    1 0.37   0.0   84.5   4.9e-17 !   Small nucleolar RNA Z103
+snoZ103              RF00149   MSTRG.20246.1        -          cm        1      100      775      882      +    no    1 0.38   0.0   84.3   5.6e-17 !   Small nucleolar RNA Z103
+SNORD96              RF00055   MSTRG.20246.1        -          cm        1       85      620      711      +    no    1 0.42   0.0   83.9   6.1e-17 !   Small nucleolar RNA SNORD96 family
+snoZ103              RF00149   MSTRG.20246.1        -          cm        1      100     2240     2347      +    no    1 0.39   0.0   84.0   6.8e-17 !   Small nucleolar RNA Z103
+snoZ103              RF00149   MSTRG.20246.1        -          cm        1      100     2656     2762      +    no    1 0.38   0.0   84.0   6.9e-17 !   Small nucleolar RNA Z103
+snoZ103              RF00149   MSTRG.20246.1        -          cm        1      100     1191     1297      +    no    1 0.39   0.0   82.8   1.4e-16 !   Small nucleolar RNA Z103
+snoZ103              RF00149   MSTRG.20246.1        -          cm        1      100     3103     3211      +    no    1 0.38   0.0   82.5   1.7e-16 !   Small nucleolar RNA Z103
+snoR143              RF01432   MSTRG.20246.1        -          cm        1      169      159      332      +    no    1 0.42   0.0   86.9   6.6e-16 !   small nucleolar RNA snoR143
+SNORD96              RF00055   MSTRG.20246.1        -          cm        1       85     2084     2177      +    no    1 0.43   0.0   79.3   9.7e-16 !   Small nucleolar RNA SNORD96 family
+snoR66               RF00202   MSTRG.20246.1        -          cm        1       76     3869     3943      +    no    1 0.37   0.0   72.5   6.4e-15 !   Small nucleolar RNA R66
+TtnuCD19             RF02295   MSTRG.20246.1        -         hmm       18       68      612      667      +     -    6 0.36   0.8   22.7     0.002 !   Tetrahymena snoRNA TtnuCD19
 sR52                 RF01306   MSTRG.20247.3        -          cm        1       59       61        9      -    no    1 0.40   0.0   24.7    0.0032 !   Small nucleolar RNA sR52
+LSU_rRNA_bacteria    RF02541   MSTRG.20450.1        -          cm      415      551     2773     2650      -    5'    4 0.33   1.9   29.5   1.2e-06 !   Bacterial large subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.20445.1        -          cm      752      960       31      206      +    3'    4 0.36   0.3   17.9    0.0062 !   Microsporidia small subunit ribosomal RNA
 MIR398               RF00695   MSTRG.20560.1        -          cm        1      109       77      181      +    no    1 0.30   3.2   65.5   9.1e-15 !   microRNA MIR398
 MIR398               RF00695   MSTRG.20560.1        -          cm        1      109      181       77      -    no    1 0.30   3.2   52.9   3.4e-11 !   microRNA MIR398
@@ -368,7 +471,11 @@ LSU_rRNA_archaea     RF02540   MSTRG.21296.1        -          cm      918     1
 LSU_rRNA_eukarya     RF02543   MSTRG.21296.1        -          cm      942     1795        1      764      + 5'&3'    4 0.54   5.0  195.6   6.2e-51 !   Eukaryotic large subunit ribosomal RNA
 mir-1277             RF04154   MSTRG.21417.1        -          cm        1       78     1846     1919      +    no    1 0.15  18.0   29.8    0.0078 !   mir-1277 microRNA precursor family
 Intron_gpII          RF00029   MSTRG.21427.1        -          cm        1       93     1375     1471      +    no    1 0.53   0.0   51.5   9.7e-09 !   Group II catalytic intron
+tRNA                 RF00005   MSTRG.21428.1        -          cm        1       71      534      616      +    no    1 0.51   0.0   64.3   3.1e-13 !   tRNA
+Intron_gpII          RF00029   MSTRG.21428.1        -          cm        1       93     1045     1133      +    no    1 0.58   0.0   46.7     2e-07 !   Group II catalytic intron
+tRNA-Sec             RF01852   MSTRG.21428.1        -          cm        1       91      534      615      +    no    1 0.51   0.0   33.7   0.00034 !   Selenocysteine transfer RNA
 Intron_gpII          RF00029   MSTRG.21429.1        -          cm        1       93      341      483      +    no    1 0.52   0.0   60.2   1.7e-11 !   Group II catalytic intron
+CyVA-1               RF02965   MSTRG.21476.1        -          cm        1       77      144      218      +    no    1 0.36   0.0   28.5   0.00029 !   CyVA-1 RNA
 mir-297              RF04217   MSTRG.21863.1        -          cm        1       71     1039     1103      +    no    1 0.14  14.7   35.1    0.0005 !   mir-297 microRNA precursor family
 TCL6_2               RF02192   MSTRG.21961.1        -         hmm       52      121      360      431      +     -    6 0.35   0.1   19.9    0.0036 !   T-cell leukemia/lymphoma 6 conserved region 2
 snoZ221_snoR21b      RF00300   MSTRG.22099.1        -          cm        1       91      191      289      +    no    1 0.37   0.0   68.4   7.7e-15 !   Small nucleolar RNA Z221/R21b
@@ -377,6 +484,8 @@ MIR2118              RF01911   MSTRG.22099.1        -          cm        1      
 MIR2118              RF01911   MSTRG.22099.1        -          cm        1      170       24      169      +    no    1 0.43   0.0   32.6   0.00026 !   microRNA MIR2118
 MIR2118_2            RF04185   MSTRG.22099.1        -          cm        1      106       46      151      +    no    1 0.43   0.0   31.6   0.00042 !   MIR2118_2 microRNA precursor family
 SMAD5-AS1_4          RF02176   MSTRG.22099.1        -         hmm        8      103      366      460      +     -    6 0.35   0.6   17.3      0.01 !   SMAD5 antisense RNA 1 conserved region 4
+MIR2118              RF01911   MSTRG.22098.1        -          cm        1      170      104      258      +    no    1 0.43   0.0   60.2   9.8e-11 !   microRNA MIR2118
+MIR2118              RF01911   MSTRG.22098.1        -          cm        1      170      257      104      -    no    1 0.42   0.0   30.7    0.0015 !   microRNA MIR2118
 MIR2118              RF01911   MSTRG.22100.1        -          cm        1      170      190      338      +    no    1 0.40   0.0   47.9   1.7e-07 !   microRNA MIR2118
 MIR2118              RF01911   MSTRG.22100.2        -          cm        1      170      190      338      +    no    1 0.40   0.0   47.9   1.7e-07 !   microRNA MIR2118
 MIR2118              RF01911   MSTRG.22100.3        -          cm        1      170      190      338      +    no    1 0.40   0.0   47.9   1.1e-07 !   microRNA MIR2118
@@ -412,6 +521,10 @@ mir-172              RF00452   MSTRG.23480.1        -          cm        1      
 U6                   RF00026   MSTRG.23480.1        -          cm        1      104      162      260      +    no    1 0.32   0.0   33.0   7.2e-06 !   U6 spliceosomal RNA
 MIR167               RF00640   MSTRG.23864.1        -          cm        1       89      158       63      -    no    1 0.45   0.0   58.7   5.8e-12 !   MIR167 microRNA precursor
 MIR167               RF00640   MSTRG.23864.1        -          cm        1       89       64      159      +    no    1 0.45   0.0   37.3   3.5e-06 !   MIR167 microRNA precursor
+SNORD75              RF00612   MSTRG.23995.1        -          cm        1       62      437      372      -    no    1 0.26   0.2   23.5    0.0021 !   Small nucleolar RNA SNORD75
+tRNA                 RF00005   MSTRG.24036.1        -          cm        9       63      727      670      -    no    1 0.57   0.0   35.7   2.3e-05 !   tRNA
+mir-297              RF04217   MSTRG.24166.1        -          cm        1       71      103       32      -    no    1 0.10  25.8   29.8    0.0035 !   mir-297 microRNA precursor family
+mir-297              RF04217   MSTRG.24233.1        -          cm       10       63      595      542      -    no    1 0.19   4.6   38.4   6.6e-05 !   mir-297 microRNA precursor family
 mir-156              RF00073   MSTRG.24243.1        -          cm        1       88      327      414      +    no    1 0.41   0.0   68.8     1e-13 !   mir-156 microRNA precursor
 mir-156              RF00073   MSTRG.24243.1        -          cm        1       88      414      327      -    no    1 0.41   0.0   53.8   1.2e-09 !   mir-156 microRNA precursor
 mir-156              RF00073   MSTRG.24243.2        -          cm        1       88      327      414      +    no    1 0.41   0.0   68.8     1e-13 !   mir-156 microRNA precursor
@@ -425,6 +538,12 @@ MIR396               RF00648   MSTRG.24316.1        -          cm        1      
 MIR396               RF00648   MSTRG.24316.2        -          cm        1      118      232      332      +    no    1 0.31   0.1   83.0   1.9e-18 !   microRNA MIR396
 MIR396               RF00648   MSTRG.24316.2        -          cm        1      118      331      231      -    no    1 0.31   0.1   67.0     5e-14 !   microRNA MIR396
 SNORD14              RF00016   MSTRG.24365.1        -          cm        1      116     1334     1223      -    no    1 0.34   0.0   30.6   0.00092 !   Small nucleolar RNA SNORD14
+twister-P1           RF03160   MSTRG.24490.1        -          cm        1       67    25448    25506      +    no    1 0.58   0.0   50.9     5e-09 !   type-P1 twister ribozyme
+mir-1277             RF04154   MSTRG.24490.1        -          cm        1       78    26409    26482      +    no    1 0.16  11.7   38.2   0.00051 !   mir-1277 microRNA precursor family
+mir-1277             RF04154   MSTRG.24490.1        -          cm        1       78    26480    26407      -    no    1 0.16  11.0   36.9    0.0011 !   mir-1277 microRNA precursor family
+twister-P1           RF03160   MSTRG.24490.2        -          cm        1       67    25186    25244      +    no    1 0.58   0.0   50.9   4.9e-09 !   type-P1 twister ribozyme
+mir-1277             RF04154   MSTRG.24490.2        -          cm        1       78    26147    26220      +    no    1 0.16  11.7   38.2    0.0005 !   mir-1277 microRNA precursor family
+mir-1277             RF04154   MSTRG.24490.2        -          cm        1       78    26218    26145      -    no    1 0.16  11.0   36.9    0.0011 !   mir-1277 microRNA precursor family
 twister-P1           RF03160   MSTRG.24490.5        -          cm        1       67    11024    11082      +    no    1 0.58   0.0   50.9   2.6e-09 !   type-P1 twister ribozyme
 mir-1277             RF04154   MSTRG.24490.5        -          cm        1       78    11985    12058      +    no    1 0.16  11.7   38.2   0.00026 !   mir-1277 microRNA precursor family
 mir-1277             RF04154   MSTRG.24490.5        -          cm        1       78    12056    11983      -    no    1 0.16  11.0   36.9   0.00058 !   mir-1277 microRNA precursor family
@@ -433,7 +552,16 @@ twister-P1           RF03160   MSTRG.24490.7        -          cm        1      
 twister-P1           RF03160   MSTRG.24490.8        -          cm        1       67    10858    10916      +    no    1 0.58   0.0   50.9   1.9e-09 !   type-P1 twister ribozyme
 twister-P1           RF03160   MSTRG.24490.9        -          cm        1       67     5221     5279      +    no    1 0.58   0.0   50.9   9.8e-10 !   type-P1 twister ribozyme
 twister-P1           RF03160   MSTRG.24490.11       -          cm        1       67     3717     3775      +    no    1 0.58   0.0   50.9   7.9e-10 !   type-P1 twister ribozyme
+LSU_rRNA_eukarya     RF02543   MSTRG.24498.1        -          cm     1245     2133        1      889      + 5'&3'    4 0.61  22.9  773.6  2.4e-210 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.24498.1        -          cm     1183     1887        1      889      + 5'&3'    4 0.61  22.9  259.5   4.5e-80 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.24498.1        -          cm     1098     1795        1      889      + 5'&3'    4 0.61  22.9  193.6     4e-62 !   Bacterial large subunit ribosomal RNA
 mir-962              RF03423   MSTRG.24511.1        -          cm        1       92      230      320      +    no    1 0.33   0.0   28.4    0.0019 !   mir-962 microRNA precursor family
+LSU_rRNA_bacteria    RF02541   MSTRG.24711.1        -          cm        1     2638      391     2968      +    3'    3 0.50   1.1 1527.6         0 !   Bacterial large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.24711.1        -          cm        1     2707      480     2968      +    3'    3 0.50   0.6 1043.0         0 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.24711.1        -          cm        1     2990      289     2968      +    3'    3 0.50   1.9  815.2  2.6e-221 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.24711.2        -          cm      231     2280        1     3163      + 5'&3'    4 0.49   3.6 1145.3         0 !   Bacterial large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.24711.2        -          cm        1     2346     1029     3163      +    3'    3 0.49   0.1  771.0  9.2e-243 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.24711.2        -          cm      112     2631        1     3163      + 5'&3'    4 0.49   3.6  567.6  5.9e-153 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.24711.3        -          cm      231     2925        1     1157      +    5'    2 0.47   0.0  547.1  3.2e-180 !   Bacterial large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.24711.3        -          cm        1     1207     1029     1774      +    3'    3 0.48   0.0  250.4   7.2e-77 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.24711.3        -          cm        4     1269        6     1774      +    3'    4 0.48   0.8  128.6   4.5e-32 !   Eukaryotic large subunit ribosomal RNA
@@ -485,6 +613,8 @@ snoR117              RF01423   MSTRG.25433.1        -          cm        1      
 snR77                RF01181   MSTRG.25433.1        -         hmm        4       64      653      704      +     -    6 0.27   0.1   19.5    0.0047 !   Small nucleolar RNA snR77
 SNORD34              RF00147   MSTRG.25433.1        -          cm        1       80      646      726      +    no    1 0.35   0.0   29.4     0.005 !   Small nucleolar RNA SNORD34
 snoR60               RF00339   MSTRG.25433.1        -          cm        1       72      648      723      +    no    1 0.34   0.0   26.2    0.0094 !   Small nucleolar RNA snoR60
+mir-266              RF03694   MSTRG.25437.1        -          cm        1       83      327      249      -    no    1 0.30   0.0   32.4   0.00078 !   mir-266 microRNA precursor family
+mir-266              RF03694   MSTRG.25437.2        -          cm        1       83      327      249      -    no    1 0.30   0.0   32.4   0.00078 !   mir-266 microRNA precursor family
 MIR2599              RF03839   MSTRG.25513.1        -          cm        1      132      163       50      -    no    1 0.31   0.2   44.3   1.5e-06 !   MIR2599 microRNA precursor family
 wcaG                 RF01761   MSTRG.25519.1        -          cm        1       98     2439     2510      +    no    1 0.31   0.2   31.1    0.0035 !   wcaG RNA
 snoR11               RF00349   MSTRG.25571.1        -          cm        1       90      317      403      +    no    1 0.31   0.0   87.4   1.8e-17 !   Small nucleolar RNA R11/Z151
@@ -507,6 +637,7 @@ wcaG                 RF01761   MSTRG.26051.1        -          cm        1      
 snoR12               RF00204   MSTRG.26081.1        -          cm        1       83      744      823      +    no    1 0.38   0.0   69.0   5.7e-13 !   Small nucleolar RNA R12
 SNORD24              RF00069   MSTRG.26081.1        -          cm        1       76      904      986      +    no    1 0.42   0.0   69.5   4.1e-12 !   Small nucleolar RNA SNORD24
 U6                   RF00026   MSTRG.26372.1        -          cm        1       48      191      241      +    no    3 0.33   0.0   32.2   6.2e-06 !   U6 spliceosomal RNA
+Sodium               RF03071   MSTRG.26841.1        -          cm        1       55      537      491      -    no    1 0.32   0.0   28.2    0.0024 !   Na+ riboswitch (DUF1646 RNA)
 wcaG                 RF01761   MSTRG.27167.1        -          cm        1       98     2589     2660      +    no    1 0.28   0.9   30.4    0.0063 !   wcaG RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.27216.1        -          cm      102      410        1      292      + 5'&3'    4 0.57   1.0  258.6   1.3e-80 !   Bacterial small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.27216.1        -          cm       85      382        1      280      +    5'    4 0.57   0.5  185.6   3.9e-53 !   Archaeal small subunit ribosomal RNA
@@ -563,6 +694,16 @@ LSU_rRNA_bacteria    RF02541   MSTRG.27349.1        -          cm     1783     2
 LSU_rRNA_archaea     RF02540   MSTRG.27349.1        -          cm     1875     2238        1      383      + 5'&3'    4 0.56   0.0  241.0   1.5e-74 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.27349.1        -          cm     2121     2483        1      383      + 5'&3'    4 0.56   0.0  148.5   3.2e-38 !   Eukaryotic large subunit ribosomal RNA
 MIR6426              RF03872   MSTRG.27367.1        -          cm        1       84      146       40      -    no    1 0.34   0.0   26.8    0.0069 !   MIR6426 microRNA precursor family
+MIR6224              RF04147   MSTRG.27414.1        -          cm        1      176     1927     1687      -    no    1 0.35   1.8   40.0   1.8e-05 !   MIR6224 microRNA precursor family
+MIR6224              RF04147   MSTRG.27414.1        -          cm        1      176     1687     1927      +    no    1 0.35   1.8   31.0    0.0025 !   MIR6224 microRNA precursor family
+MIR6224              RF04147   MSTRG.27414.2        -          cm        1      176     1927     1687      -    no    1 0.35   1.8   40.0   1.8e-05 !   MIR6224 microRNA precursor family
+MIR6224              RF04147   MSTRG.27414.2        -          cm        1      176     1687     1927      +    no    1 0.35   1.8   31.0    0.0025 !   MIR6224 microRNA precursor family
+LSU_rRNA_eukarya     RF02543   MSTRG.27446.1        -          cm      249     1329        1     1077      + 5'&3'    4 0.57  11.6  943.8  3.1e-257 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27446.1        -          cm      392     1267        1     1077      + 5'&3'    4 0.57  11.6  360.3  3.8e-112 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27446.1        -          cm      397     1183        1     1077      + 5'&3'    4 0.57  11.6  277.3   4.7e-90 !   Bacterial large subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.27447.1        -          cm     1831     3161        1     1328      + 5'&3'    4 0.50   0.0 1495.6         0 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27447.1        -          cm     1725     2881        1     1328      + 5'&3'    4 0.50   0.0  714.9  3.1e-225 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27447.1        -          cm     1631     2814        1     1328      + 5'&3'    4 0.50   0.0  596.3  7.8e-197 !   Bacterial large subunit ribosomal RNA
 SSU_rRNA_eukarya     RF01960   MSTRG.27448.1        -          cm      109      344        1      237      + 5'&3'    4 0.47   0.0  135.5   4.9e-39 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.27449.1        -          cm      397     1786        1     1365      + 5'&3'    4 0.48   0.0 1298.7         0 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.27449.1        -          cm      256     1266        1     1365      + 5'&3'    4 0.48   0.0  593.5  1.8e-181 !   Microsporidia small subunit ribosomal RNA
@@ -603,6 +744,10 @@ SSU_rRNA_bacteria      RF00177   MSTRG.27459.1        -          cm     1275    
 LSU_rRNA_eukarya     RF02543   MSTRG.27460.1        -          cm     1403     2578        1     1173      + 5'&3'    4 0.54   0.6 1120.3         0 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.27460.1        -          cm     1336     2311        1     1173      + 5'&3'    4 0.54   0.6  408.7  1.5e-127 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.27460.1        -          cm     1250     2291        1     1173      + 5'&3'    4 0.54   0.6  332.1  2.2e-108 !   Bacterial large subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.27462.1        -          cm        1     1501     1469     2779      +    3'    3 0.49   0.0 1032.5         0 !   Eukaryotic small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.27462.1        -          cm        1     1057     1524     2779      +    3'    3 0.50   0.0  491.5  1.8e-149 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.27462.1        -          cm        1     1183     1483     2779      +    3'    3 0.49   0.0  338.4   7.5e-98 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.27462.1        -          cm        1     1228     1525     2779      +    3'    3 0.50   0.0  257.5   2.6e-79 !   Bacterial small subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.27461.1        -          cm      165      367        1      204      + 5'&3'    4 0.61   0.2  163.7   1.1e-42 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.27461.1        -          cm      307      509        1      204      + 5'&3'    4 0.61   0.2   78.4   6.4e-23 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.27461.1        -          cm      316      517        1      204      + 5'&3'    4 0.61   0.2   60.4   3.9e-18 !   Bacterial large subunit ribosomal RNA
@@ -702,12 +847,18 @@ SSU_rRNA_eukarya       RF01960   MSTRG.27491.1        -          cm     1059    
 SSU_rRNA_microsporidia RF02542   MSTRG.27491.1        -          cm      700     1019        1      385      + 5'&3'    4 0.49   0.0  190.1   1.3e-56 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.27491.1        -          cm      830     1147       60      385      +    3'    4 0.49   0.0  177.0   1.9e-50 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.27491.1        -          cm      875     1192       60      385      +    3'    4 0.49   0.0  119.4   7.9e-36 !   Bacterial small subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.27492.1        -          cm      161      986        1      822      + 5'&3'    4 0.59  11.8  597.9  6.6e-162 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27492.1        -          cm      301      962        1      822      + 5'&3'    4 0.59  11.8  240.9   3.6e-74 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27492.1        -          cm      312      885        1      822      + 5'&3'    4 0.59  11.8  191.7   1.7e-61 !   Bacterial large subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.27493.1        -          cm      805     1610        1      785      + 5'&3'    4 0.47   0.0  784.4  7.8e-237 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.27493.1        -          cm      460     1133        1      785      + 5'&3'    4 0.47   0.0  372.7  4.6e-113 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.27493.1        -          cm      550     1286        1      785      + 5'&3'    4 0.47   0.0  313.0   8.2e-91 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.27493.1        -          cm      547     1331        1      785      + 5'&3'    4 0.47   0.0  242.3   5.6e-75 !   Bacterial small subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.27494.1        -          cm        3      317        1      318      + 5'&3'    4 0.45   0.0  228.8   2.1e-67 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.27494.1        -          cm        1      178        1      318      +    3'    3 0.45   0.0   46.2   5.9e-12 !   Microsporidia small subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.27495.1        -          cm        1      432        3      435      +    3'    3 0.57   3.6  386.9  5.9e-104 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27495.1        -          cm      130      553        1      415      +    5'    4 0.56   0.9  180.5   3.7e-55 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27495.1        -          cm      159      562        1      414      +    5'    4 0.56   0.8  155.2   1.5e-49 !   Bacterial large subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.27496.1        -          cm      797     1011        1      215      + 5'&3'    4 0.41   0.0  168.1   5.1e-49 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.27496.1        -          cm      452      664        1      215      + 5'&3'    4 0.41   0.0   70.9   8.1e-20 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.27496.1        -          cm      517      732       11      215      +    3'    4 0.42   0.0   42.8   1.4e-10 !   Archaeal small subunit ribosomal RNA
@@ -768,6 +919,17 @@ LSU_rRNA_bacteria    RF02541   MSTRG.27512.1        -          cm      606      
 LSU_rRNA_eukarya     RF02543   MSTRG.27513.1        -          cm     1368     1568        1      201      + 5'&3'    4 0.58   0.0  183.5   3.7e-48 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.27513.1        -          cm     1302     1501        1      201      + 5'&3'    4 0.58   0.0   90.4   9.7e-27 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.27513.1        -          cm     1216     1416        1      201      + 5'&3'    4 0.58   0.0   75.5   3.5e-23 !   Bacterial large subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.27514.1        -          cm     1862     2582        1      721      + 5'&3'    4 0.52   0.0  709.9  7.5e-193 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27514.1        -          cm     1756     2311        1      721      + 5'&3'    4 0.52   0.0  267.1   1.4e-82 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27514.1        -          cm     1662     2291        1      721      + 5'&3'    4 0.52   0.0  215.9   1.1e-69 !   Bacterial large subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.27515.1        -          cm       72      683        1     1840      + 5'&3'    4 0.53  13.2  382.0  1.8e-113 !   Eukaryotic small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.27515.1        -          cm        1      513     1376     1840      +    3'    3 0.54   0.0  168.2     4e-49 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.27515.1        -          cm        1      585     1353     1840      +    3'    3 0.53   0.0   65.7   1.7e-16 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.27515.1        -          cm        1      628     1272     1840      +    3'    3 0.51   0.0   41.0   5.4e-10 !   Bacterial small subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.27516.1        -          cm        1     1658     1348     2874      +    3'    3 0.49   0.0 1154.4         0 !   Eukaryotic small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.27516.1        -          cm        1     1181     1469     2874      +    3'    3 0.50   0.0  543.3  1.5e-165 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.27516.1        -          cm        1     1334     1446     2874      +    3'    3 0.49   0.0  418.3  9.9e-122 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.27516.1        -          cm        1     1379     1509     2874      +    3'    3 0.50   0.0  327.1  1.2e-101 !   Bacterial small subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.27517.1        -          cm      175      428        1      255      + 5'&3'    4 0.57   1.0  213.0   3.3e-56 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.27517.1        -          cm      321      569        1      255      + 5'&3'    4 0.57   1.0  108.0   2.9e-32 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.27517.1        -          cm      328      579        1      255      + 5'&3'    4 0.57   1.0   97.2   2.4e-30 !   Bacterial large subunit ribosomal RNA
@@ -792,9 +954,15 @@ SSU_rRNA_eukarya       RF01960   MSTRG.27523.1        -          cm     1061    
 SSU_rRNA_microsporidia RF02542   MSTRG.27523.1        -          cm      702     1157        1      553      + 5'&3'    4 0.49   0.0  274.6     1e-82 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.27523.1        -          cm      830     1310       58      553      +    3'    4 0.49   0.0  246.8   3.6e-71 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.27523.1        -          cm      875     1355       58      553      +    3'    4 0.49   0.0  181.0     2e-55 !   Bacterial small subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.27525.1        -          cm       73      439        1      368      + 5'&3'    4 0.59   2.5  295.5   8.4e-79 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27525.1        -          cm      214      555        1      343      +    5'    4 0.58   0.1  138.6   7.5e-42 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27525.1        -          cm      233      590        1      368      + 5'&3'    4 0.59   2.5  116.4   1.3e-36 !   Bacterial large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.27524.1        -          cm     2072     2577        1      503      + 5'&3'    4 0.49   0.0  530.3  1.9e-143 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.27524.1        -          cm     1830     2311        1      503      + 5'&3'    4 0.49   0.0  205.4   4.8e-63 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.27524.1        -          cm     1733     2290        1      503      + 5'&3'    4 0.49   0.0  156.2     8e-50 !   Bacterial large subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.27526.1        -          cm        1      584     1151     1562      +    3'    3 0.52   0.0  203.5   5.4e-59 !   Eukaryotic small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.27526.1        -          cm        1      410     1198     1562      +    3'    3 0.54   0.0  114.7   1.4e-32 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.27526.1        -          cm        1      525     1170     1562      +    3'    3 0.53   0.0   24.1   0.00012 !   Bacterial small subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.27527.1        -          cm        6      270        1      266      + 5'&3'    4 0.43   0.0  182.1   3.2e-53 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.27527.1        -          cm        6      165        1      266      + 5'&3'    4 0.43   0.0   27.1   4.4e-06 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.27528.1        -          cm      346     1221        1      868      + 5'&3'    4 0.49   0.0  813.0  1.5e-245 !   Eukaryotic small subunit ribosomal RNA
@@ -808,6 +976,9 @@ SSU_rRNA_eukarya       RF01960   MSTRG.27535.1        -          cm      340    
 SSU_rRNA_microsporidia RF02542   MSTRG.27535.1        -          cm      199     1223        1     1332      + 5'&3'    4 0.49   0.0  622.3  1.9e-190 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.27535.1        -          cm      248     1376        1     1332      + 5'&3'    4 0.49   0.0  494.1    1e-144 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.27535.1        -          cm      264     1421        1     1332      + 5'&3'    4 0.49   0.0  386.1  6.5e-121 !   Bacterial small subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.27536.1        -          cm      348      888        1      536      + 5'&3'    4 0.60  10.0  296.5   6.6e-79 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27536.1        -          cm      490      864        1      536      + 5'&3'    4 0.60  10.0   91.1   1.5e-26 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27536.1        -          cm      498      788        1      536      + 5'&3'    4 0.60  10.0   81.0   1.4e-24 !   Bacterial large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.27538.1        -          cm     2762     3010        1      249      + 5'&3'    4 0.47   0.0  321.0   5.2e-86 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.27538.1        -          cm     2479     2716        1      238      +    5'    4 0.47   0.0  171.0   2.2e-52 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.27538.1        -          cm     2409     2635        1      226      +    5'    4 0.47   0.0  124.6   1.5e-39 !   Bacterial large subunit ribosomal RNA
@@ -817,6 +988,9 @@ LSU_rRNA_bacteria    RF02541   MSTRG.27539.1        -          cm     1077     1
 LSU_rRNA_eukarya     RF02543   MSTRG.27540.1        -          cm      608      894        1      285      + 5'&3'    4 0.59   0.0  217.4   2.3e-57 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.27540.1        -          cm      605      870        1      285      + 5'&3'    4 0.59   0.0   82.8   3.7e-24 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.27540.1        -          cm      556      795        1      285      + 5'&3'    4 0.59   0.0   49.3   2.8e-14 !   Bacterial large subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.27541.1        -          cm      561      979        1      418      + 5'&3'    4 0.59   0.1  348.1   2.9e-93 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27541.1        -          cm      556      955        1      418      + 5'&3'    4 0.59   0.1  162.0   2.8e-49 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27541.1        -          cm      622      878      107      418      +    3'    4 0.56   0.0  113.0     2e-35 !   Bacterial large subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.27542.1        -          cm     1461     1729        1      268      + 5'&3'    4 0.52   0.0  256.1     8e-76 !   Eukaryotic small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.27542.1        -          cm     1017     1242        1      268      + 5'&3'    4 0.52   0.0  113.7     5e-33 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.27542.1        -          cm     1145     1421        1      268      + 5'&3'    4 0.52   0.0  104.1   8.3e-29 !   Archaeal small subunit ribosomal RNA
@@ -886,6 +1060,13 @@ SSU_rRNA_eukarya       RF01960   MSTRG.27562.1        -          cm      797    
 SSU_rRNA_microsporidia RF02542   MSTRG.27562.1        -          cm      452     1152        1      812      + 5'&3'    4 0.47   0.0  410.8  6.6e-125 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.27562.1        -          cm        1     1305       31      812      +    3'    3 0.47   0.0  346.5    8e-101 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.27562.1        -          cm      583     1350        1      812      + 5'&3'    4 0.47   0.0  273.1   7.5e-85 !   Bacterial small subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.27564.1        -          cm        1      788       10     2155      +    3'    3 0.54  21.6  497.6  9.5e-149 !   Eukaryotic small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.27564.1        -          cm        1      626     1568     2155      +    3'    3 0.53   0.0  154.5   8.5e-45 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.27564.1        -          cm        1      594     1568     2155      +    3'    3 0.53   0.0   53.4   9.7e-13 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.27564.1        -          cm       34      540     1643     1971      +    no    3 0.53   0.0   29.8   2.6e-06 !   Bacterial small subunit ribosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.27563.1        -          cm      236     1088        1      848      + 5'&3'    4 0.58   8.1  646.6  2.6e-175 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.27563.1        -          cm      379     1058        1      848      + 5'&3'    4 0.58   8.1  274.7   5.9e-85 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.27563.1        -          cm      384      979        1      848      + 5'&3'    4 0.58   8.1  213.5   8.5e-69 !   Bacterial large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.27565.1        -          cm     2046     3124        1     1077      + 5'&3'    4 0.49   0.0 1232.4         0 !   Eukaryotic large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.27565.1        -          cm     1843     2842        1     1077      + 5'&3'    4 0.49   0.0  591.1  8.1e-186 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.27565.1        -          cm     1745     2775        1     1077      + 5'&3'    4 0.49   0.0  466.0  2.9e-153 !   Bacterial large subunit ribosomal RNA
@@ -939,15 +1120,62 @@ U2                   RF00004   MSTRG.28113.1        -          cm        6      
 U2                   RF00004   MSTRG.28115.1        -          cm        6      193        1      190      +    5'    2 0.45   0.0  147.9   8.1e-33 !   U2 spliceosomal RNA
 U2                   RF00004   MSTRG.28120.1        -          cm        6      193        1      190      +    5'    2 0.46   0.0  151.1   1.1e-33 !   U2 spliceosomal RNA
 U2                   RF00004   MSTRG.28121.1        -          cm        1      193        3      194      +    no    1 0.46   0.0  156.6   7.2e-35 !   U2 spliceosomal RNA
+wcaG                 RF01761   MSTRG.28242.1        -          cm        1       98     4859     4930      +    no    1 0.26   0.8   32.2    0.0038 !   wcaG RNA
+MIR5298              RF03794   MSTRG.28274.1        -          cm        1       88       83       36      -    no    1 0.35   0.0   35.0    0.0047 !   MIR5298 microRNA precursor family
+MIR6426              RF03872   MSTRG.28274.1        -          cm        1       84       77       47      -    no    1 0.32   0.0   28.3    0.0073 !   MIR6426 microRNA precursor family
+MIR5298              RF03794   MSTRG.28275.1        -          cm        1       88       97       50      -    no    1 0.35   0.0   35.0    0.0072 !   MIR5298 microRNA precursor family
 MIR168               RF00677   MSTRG.28360.1        -          cm        1      133      121      361      +    no    1 0.45   0.0   92.3   2.3e-23 !   microRNA MIR168
 MIR168               RF00677   MSTRG.28360.1        -          cm        1      133      360      120      -    no    1 0.45   0.0   42.3   1.5e-08 !   microRNA MIR168
+U2                   RF00004   MSTRG.28522.1        -          cm       10      193        1      185      +    5'    2 0.44   0.0  149.2   1.5e-32 !   U2 spliceosomal RNA
 MIR2600              RF03843   MSTRG.28779.1        -          cm        1       85      210      297      +    no    1 0.33   0.0   38.1     5e-06 !   MIR2600 microRNA precursor family
 mir-338              RF00686   MSTRG.28779.1        -          cm        1       69      220      287      +    no    1 0.38   0.0   33.4   0.00013 !   microRNA mir-338
 MIR6224              RF04147   MSTRG.28853.1        -          cm        1      176      972     1211      +    no    1 0.32   8.1   36.4   5.1e-05 !   MIR6224 microRNA precursor family
+mir-3003             RF04010   MSTRG.28864.1        -          cm        1       76      394      322      -    no    1 0.32   0.0   28.8    0.0094 !   mir-3003 microRNA precursor family
+mir-3003             RF04010   MSTRG.28899.1        -          cm        1       76       90       17      -    no    1 0.31   0.0   31.9    0.0012 !   mir-3003 microRNA precursor family
 MIR159               RF00638   MSTRG.29173.1        -          cm        1      196      193      386      +    no    1 0.45   0.0  129.6   6.5e-29 !   microRNA MIR159
 MIR159               RF00638   MSTRG.29173.1        -          cm        1      196      384      191      -    no    1 0.45   0.0   78.4   3.7e-16 !   microRNA MIR159
 tRNA                 RF00005   MSTRG.29339.1        -          cm        1       71     3177     3256      +    no    1 0.56   0.0   64.3   3.5e-13 !   tRNA
 U2                   RF00004   MSTRG.29435.1        -          cm        1      193      485      596      +    no    1 0.38   0.0   73.7   1.7e-14 !   U2 spliceosomal RNA
+tRNA                 RF00005   MSTRG.29485.1        -          cm        1       71     1611     1538      -    no    1 0.39   0.0   31.3   0.00045 !   tRNA
+tRNA                 RF00005   MSTRG.29485.2        -          cm        1       71     1611     1538      -    no    1 0.39   0.0   31.3   0.00043 !   tRNA
+mir-3149             RF04176   MSTRG.29730.1        -          cm        1       83     3411     3493      +    no    1 0.22   5.6   41.8   9.8e-06 !   mir-3149 microRNA precursor family
+mir-1277             RF04154   MSTRG.29730.1        -          cm        1       78     3418     3494      +    no    1 0.22   4.0   36.8    0.0002 !   mir-1277 microRNA precursor family
+mir-568              RF04158   MSTRG.29730.1        -          cm        1       93     3409     3497      +    no    1 0.21   7.1   36.2    0.0016 !   mir-568 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.1        -          cm        1       83     3491     3411      -    no    1 0.21   5.8   31.8    0.0037 !   mir-3149 microRNA precursor family
+mir-4012             RF04238   MSTRG.29730.1        -          cm        1       63     3455     3514      +    no    1 0.23   3.8   28.9    0.0093 !   mir-4012 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.2        -          cm        1       83     3331     3413      +    no    1 0.22   5.6   41.8     1e-05 !   mir-3149 microRNA precursor family
+mir-1277             RF04154   MSTRG.29730.2        -          cm        1       78     3338     3414      +    no    1 0.22   4.0   36.8   0.00021 !   mir-1277 microRNA precursor family
+mir-568              RF04158   MSTRG.29730.2        -          cm        1       93     3329     3417      +    no    1 0.21   7.1   36.2    0.0017 !   mir-568 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.2        -          cm        1       83     3411     3331      -    no    1 0.21   5.8   31.8    0.0039 !   mir-3149 microRNA precursor family
+mir-4012             RF04238   MSTRG.29730.2        -          cm        1       63     3375     3434      +    no    1 0.23   3.8   28.9      0.01 !   mir-4012 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.3        -          cm        1       83      659      741      +    no    1 0.22   5.6   41.8   4.6e-06 !   mir-3149 microRNA precursor family
+mir-1277             RF04154   MSTRG.29730.3        -          cm        1       78      666      742      +    no    1 0.22   4.0   36.8   9.3e-05 !   mir-1277 microRNA precursor family
+mir-568              RF04158   MSTRG.29730.3        -          cm        1       93      657      745      +    no    1 0.21   7.1   36.2   0.00075 !   mir-568 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.3        -          cm        1       83      739      659      -    no    1 0.21   5.8   31.8    0.0017 !   mir-3149 microRNA precursor family
+mir-4012             RF04238   MSTRG.29730.3        -          cm        1       63      703      762      +    no    1 0.23   3.8   28.9    0.0044 !   mir-4012 microRNA precursor family
+mir-297              RF04217   MSTRG.29730.3        -          cm        1       71      733      666      -    no    1 0.19   4.4   31.6    0.0054 !   mir-297 microRNA precursor family
+mir-297              RF04217   MSTRG.29730.3        -          cm        1       71      663      732      +    no    1 0.19   5.7   30.9    0.0081 !   mir-297 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.4        -          cm        1       83      653      735      +    no    1 0.22   5.6   41.8   5.4e-06 !   mir-3149 microRNA precursor family
+mir-1277             RF04154   MSTRG.29730.4        -          cm        1       78      660      736      +    no    1 0.22   4.0   36.8   0.00011 !   mir-1277 microRNA precursor family
+mir-568              RF04158   MSTRG.29730.4        -          cm        1       93      651      739      +    no    1 0.21   7.1   36.2   0.00088 !   mir-568 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.4        -          cm        1       83      733      653      -    no    1 0.21   5.8   31.8     0.002 !   mir-3149 microRNA precursor family
+mir-4012             RF04238   MSTRG.29730.4        -          cm        1       63      697      756      +    no    1 0.23   3.8   28.9    0.0051 !   mir-4012 microRNA precursor family
+mir-297              RF04217   MSTRG.29730.4        -          cm        1       71      727      660      -    no    1 0.19   4.4   31.6    0.0063 !   mir-297 microRNA precursor family
+mir-297              RF04217   MSTRG.29730.4        -          cm        1       71      657      726      +    no    1 0.19   5.7   30.9    0.0095 !   mir-297 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.5        -          cm        1       83      641      723      +    no    1 0.22   5.6   41.8   5.4e-06 !   mir-3149 microRNA precursor family
+mir-1277             RF04154   MSTRG.29730.5        -          cm        1       78      648      724      +    no    1 0.22   4.0   36.8   0.00011 !   mir-1277 microRNA precursor family
+mir-568              RF04158   MSTRG.29730.5        -          cm        1       93      639      727      +    no    1 0.21   7.1   36.2   0.00088 !   mir-568 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.5        -          cm        1       83      721      641      -    no    1 0.21   5.8   31.8     0.002 !   mir-3149 microRNA precursor family
+mir-4012             RF04238   MSTRG.29730.5        -          cm        1       63      685      744      +    no    1 0.23   3.8   28.9    0.0051 !   mir-4012 microRNA precursor family
+mir-297              RF04217   MSTRG.29730.5        -          cm        1       71      715      648      -    no    1 0.19   4.4   31.6    0.0063 !   mir-297 microRNA precursor family
+mir-297              RF04217   MSTRG.29730.5        -          cm        1       71      645      714      +    no    1 0.19   5.7   30.9    0.0095 !   mir-297 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.6        -          cm        1       83      630      712      +    no    1 0.22   5.6   41.8   5.3e-06 !   mir-3149 microRNA precursor family
+mir-1277             RF04154   MSTRG.29730.6        -          cm        1       78      637      713      +    no    1 0.22   4.0   36.8   0.00011 !   mir-1277 microRNA precursor family
+mir-568              RF04158   MSTRG.29730.6        -          cm        1       93      628      716      +    no    1 0.21   7.1   36.2   0.00087 !   mir-568 microRNA precursor family
+mir-3149             RF04176   MSTRG.29730.6        -          cm        1       83      710      630      -    no    1 0.21   5.8   31.8     0.002 !   mir-3149 microRNA precursor family
+mir-4012             RF04238   MSTRG.29730.6        -          cm        1       63      674      733      +    no    1 0.23   3.8   28.9    0.0051 !   mir-4012 microRNA precursor family
+mir-297              RF04217   MSTRG.29730.6        -          cm        1       71      704      637      -    no    1 0.19   4.4   31.6    0.0063 !   mir-297 microRNA precursor family
+mir-297              RF04217   MSTRG.29730.6        -          cm        1       71      634      703      +    no    1 0.19   5.7   30.9    0.0094 !   mir-297 microRNA precursor family
 MIR6426              RF03872   MSTRG.29732.1        -          cm        1       84      108       69      -    no    1 0.35   0.0   30.4    0.0024 !   MIR6426 microRNA precursor family
 MIR6224              RF04147   MSTRG.29781.1        -          cm        1      176      622      805      +    no    1 0.38   0.0   32.4   0.00024 !   MIR6224 microRNA precursor family
 MIR6224              RF04147   MSTRG.29781.2        -          cm        1      176      622      805      +    no    1 0.38   0.0   32.4   0.00024 !   MIR6224 microRNA precursor family
@@ -993,6 +1221,8 @@ tRNA-Sec             RF01852   MSTRG.30247.1        -          cm        1      
 L31-Firmicutes       RF03156   MSTRG.30251.1        -          cm        1       30      191      156      -    no    1 0.50   0.0   27.0    0.0033 !   L31-Firmicutes ribosomal protein leader
 HSR-omega_1          RF01885   MSTRG.30477.1        -         hmm       10       44      172      138      -     -    6 0.29   1.7   19.2    0.0018 !   Heat shock gene hsromega conserved region 1
 STnc390              RF02056   MSTRG.30483.1        -          cm        1       60      454      508      +    no    1 0.25   0.1   27.0    0.0011 !   Salmonella sRNA STnc390
+5S_rRNA              RF00001   MSTRG.30557.1        -          cm        1      119     5028     5144      +    no    1 0.49   0.0   60.4   1.1e-10 !   5S ribosomal RNA
+5S_rRNA              RF00001   MSTRG.30557.2        -          cm        1      119     4958     5074      +    no    1 0.49   0.0   60.4   1.1e-10 !   5S ribosomal RNA
 SSU_rRNA_bacteria      RF00177   MSTRG.30599.1        -          cm        1      408      109      498      +    3'    3 0.58   2.8  364.3  2.5e-114 !   Bacterial small subunit ribosomal RNA
 SSU_rRNA_archaea       RF01959   MSTRG.30599.1        -          cm        1      392      114      498      +    3'    3 0.58   4.1  228.6   9.4e-66 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.30599.1        -          cm        1      343      114      498      +    3'    3 0.58   4.1  170.0   3.1e-50 !   Microsporidia small subunit ribosomal RNA
@@ -1012,6 +1242,10 @@ LSU_rRNA_bacteria    RF02541   MSTRG.30665.1        -          cm        1     2
 LSU_rRNA_archaea     RF02540   MSTRG.30665.1        -          cm        1     2875      100     2902      +    3'    3 0.54  54.3 1672.5         0 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.30665.1        -          cm        1     3157      244     2902      +    3'    3 0.55  50.1 1089.6    5e-297 !   Eukaryotic large subunit ribosomal RNA
 5_8S_rRNA            RF00002   MSTRG.30665.1        -          cm        1      154      113      249      +    no    1 0.50   0.0   32.5   6.6e-06 !   5.8S ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.30667.1        -          cm        1      800      110      875      +    3'    3 0.56  13.3  745.4  1.9e-236 !   Bacterial small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.30667.1        -          cm        1      751      115      875      +    3'    3 0.56  14.6  474.0  6.7e-139 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.30667.1        -          cm        1      683      115      875      +    3'    3 0.56  14.6  333.0  1.1e-100 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.30667.1        -          cm        1     1030      115      875      +    3'    3 0.56  14.6  237.9   9.2e-70 !   Eukaryotic small subunit ribosomal RNA
 snoZ155              RF00326   MSTRG.31047.1        -          cm        1       81      302      381      +    no    1 0.32   0.0   49.4   6.6e-07 !   Small nucleolar RNA Z155
 snoZ155              RF00326   MSTRG.31047.1        -          cm        1       79      499      577      +    3'    3 0.33   0.0   46.0   3.8e-06 !   Small nucleolar RNA Z155
 snoR41               RF00205   MSTRG.31047.1        -          cm        1       97      122      217      +    no    1 0.39   0.0   37.7   3.8e-05 !   Small nucleolar RNA R41
@@ -1025,6 +1259,14 @@ Protozoa_SRP         RF01856   MSTRG.31555.1        -          cm        1      
 Plant_SRP            RF01855   MSTRG.31567.1        -          cm        1      305        2      286      +    no    1 0.49   0.1  128.6   1.6e-36 !   Plant signal recognition particle RNA
 Metazoa_SRP          RF00017   MSTRG.31567.1        -          cm        1      301        2      285      +    no    1 0.49   0.1   46.6   1.1e-10 !   Metazoan signal recognition particle RNA
 Protozoa_SRP         RF01856   MSTRG.31567.1        -          cm        1      241       18      265      +    no    1 0.51   1.4   32.9   5.4e-05 !   Protozoan signal recognition particle RNA
+CrcZ                 RF01675   MSTRG.31637.1        -          cm        1      398      568      497      -    no    1 0.32   2.0   22.2    0.0033 !   Pseudomonas sRNA CrcZ
+CrcZ                 RF01675   MSTRG.31637.2        -          cm        1      398      568      497      -    no    1 0.32   2.0   22.2    0.0029 !   Pseudomonas sRNA CrcZ
+U6                   RF00026   MSTRG.31701.1        -          cm        1      104       66      173      +    no    1 0.29   4.0   29.0   0.00019 !   U6 spliceosomal RNA
+ar14                 RF02344   MSTRG.31761.1        -          cm        1      123      948      823      -    no    1 0.54   0.0   34.8    0.0002 !   Alphaproteobacterial ar14
+ar14                 RF02344   MSTRG.31761.1        -          cm        1      123      763      640      -    no    1 0.50   0.0   29.0    0.0039 !   Alphaproteobacterial ar14
+MIR8007              RF04127   MSTRG.31807.1        -          cm       69      155      644      730      +    no    1 0.17  14.1   30.2     0.002 !   MIR8007 microRNA precursor family
+snoR79               RF00323   MSTRG.32033.1        -          cm        1       65      878      848      -    no    1 0.29   0.0   27.5    0.0041 !   Small nucleolar RNA R79
+mir-297              RF04217   MSTRG.32059.1        -          cm        1       71     1300     1246      -    no    1 0.25   0.1   34.7   0.00073 !   mir-297 microRNA precursor family
 tRNA                 RF00005   MSTRG.32146.1        -          cm        1       71      277      208      -    no    1 0.47   0.0   27.0     0.001 !   tRNA
 NEAT1_2              RF01956   MSTRG.32462.1        -         hmm        6       90      183      271      +     -    6 0.42   0.5   19.0    0.0027 !   Nuclear enriched abundant transcript 1 conserved region 2
 mir-460              RF00712   MSTRG.32521.1        -          cm        1       77      618      693      +    no    1 0.25   0.4   31.2   8.6e-05 !   microRNA mir-460
@@ -1033,6 +1275,10 @@ LSU_rRNA_bacteria    RF02541   MSTRG.32717.1        -          cm       20      
 LSU_rRNA_archaea     RF02540   MSTRG.32717.1        -          cm       23      238        3      223      +    3'    4 0.50   0.1  127.4   1.6e-38 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.32717.1        -          cm        1       97      125      223      +    3'    3 0.51   0.0   71.2     4e-17 !   Eukaryotic large subunit ribosomal RNA
 5_8S_rRNA            RF00002   MSTRG.32717.1        -          cm        9      154        2      148      +    no    2 0.50   0.0   25.8   4.2e-05 !   5.8S ribosomal RNA
+mir-297              RF04217   MSTRG.32800.1        -          cm        1       71      548      478      -    no    1 0.07  29.1   35.0   0.00027 !   mir-297 microRNA precursor family
+mir-1277             RF04154   MSTRG.32800.1        -          cm        1       78      553      476      -    no    1 0.10  26.3   31.2   0.00087 !   mir-1277 microRNA precursor family
+mir-297              RF04217   MSTRG.32800.1        -          cm        1       71      481      551      +    no    1 0.07  30.3   30.4    0.0034 !   mir-297 microRNA precursor family
+mir-1277             RF04154   MSTRG.32800.1        -          cm        1       78      476      550      +    no    1 0.09  26.4   27.9    0.0067 !   mir-1277 microRNA precursor family
 Alfamo_CPB           RF00252   MSTRG.32911.1        -          cm        1      182     2381     2590      +    no    1 0.41   0.0   21.3    0.0075 !   Alfalfa mosaic virus coat protein binding (CPB) RNA
 snoZ107_R87          RF00360   MSTRG.33062.1        -          cm        1      117     1111     1217      +    no    1 0.44   0.0   96.9     1e-21 !   Small nucleolar RNA Z107/R87
 snoZ107_R87          RF00360   MSTRG.33062.1        -          cm        1      117      491      585      +    no    1 0.49   0.0   81.1   1.8e-17 !   Small nucleolar RNA Z107/R87
@@ -1072,6 +1318,10 @@ snoR26               RF01286   MSTRG.33743.1        -          cm        1      
 snoR26               RF01286   MSTRG.33743.2        -          cm        1       94      643      733      +    no    1 0.33   0.0   72.9   3.1e-14 !   Small nucleolar RNA snoR26
 snoR27               RF01287   MSTRG.33743.2        -          cm        1       95      492      584      +    no    1 0.31   0.2   69.2   9.3e-11 !   Small nucleolar RNA snoR27
 snoR26               RF01286   MSTRG.33743.2        -          cm        1       94      492      583      +    no    1 0.32   0.1   30.7    0.0019 !   Small nucleolar RNA snoR26
+U6                   RF00026   MSTRG.33808.1        -          cm        1      104      501      599      +    no    1 0.40   0.0   26.8   0.00044 !   U6 spliceosomal RNA
+DLEU2_1              RF02105   MSTRG.34192.1        -         hmm        5       79      130       56      -     -    6 0.27   2.9   19.7    0.0023 !   Deleted in lymphocytic leukemia 2 conserved region 1
+U6                   RF00026   MSTRG.34203.1        -          cm        1      104      120      222      +    no    1 0.47   0.0  110.0   2.8e-27 !   U6 spliceosomal RNA
+U6                   RF00026   MSTRG.34203.2        -          cm        1      104       93      195      +    no    1 0.47   0.0  110.0   2.8e-27 !   U6 spliceosomal RNA
 U6                   RF00026   MSTRG.34204.1        -          cm        1      104     1970     1868      -    no    1 0.47   0.0  110.0   8.1e-28 !   U6 spliceosomal RNA
 MIR6027              RF04199   MSTRG.34255.1        -          cm        1      158      154      307      +    no    1 0.34   0.5  125.9   8.1e-30 !   MIR6027 microRNA precursor family
 MIR6027              RF04199   MSTRG.34255.1        -          cm        1      158      537      715      +    no    1 0.37   0.1   81.2   1.1e-17 !   MIR6027 microRNA precursor family
@@ -1171,6 +1421,54 @@ tRNA-Sec             RF01852   MSTRG.37284.2        -          cm        1      
 mir-297              RF04217   MSTRG.37497.1        -          cm        1       71      112       45      -    no    1 0.28   0.5   42.5   1.1e-06 !   mir-297 microRNA precursor family
 sno_ZL1              RF02723   MSTRG.37497.1        -          cm       45       99      120       66      -    no    1 0.35   2.1   20.7    0.0029 !   Small nucleolar RNA ZL1
 snosnR61             RF00476   MSTRG.37498.1        -         hmm       33       75     1130     1088      -     -    6 0.23   0.2   18.9    0.0063 !   Small nucleolar RNA snR61/Z1/Z11
+snoR86               RF00303   MSTRG.37542.1        -          cm        1      123     1217     1341      +    no    1 0.39   0.0  109.2   6.3e-21 !   Small nucleolar RNA snoR86
+snoZ43               RF00330   MSTRG.37542.1        -          cm        1      100     2064     2162      +    no    1 0.45   0.0   92.2   1.6e-20 !   Small nucleolar RNA Z43
+snoZ43               RF00330   MSTRG.37542.1        -          cm        1      100      448      547      +    no    1 0.42   0.0   91.8   2.1e-20 !   Small nucleolar RNA Z43
+snoU61               RF01170   MSTRG.37542.1        -          cm        1       84      761      841      +    no    1 0.43   0.0   78.9   3.3e-18 !   Small nucleolar RNA U61
+snoR14               RF01280   MSTRG.37542.1        -          cm        1       84     2379     2466      +    no    1 0.38   0.0   82.2   4.2e-17 !   Small nucleolar RNA snoR14
+snoU61               RF01170   MSTRG.37542.1        -          cm        1       84     2245     2321      +    no    1 0.43   0.0   68.3   4.5e-15 !   Small nucleolar RNA U61
+snoR86               RF00303   MSTRG.37542.1        -          cm        1      123     1530     1634      +    no    1 0.41   0.0   80.9   2.1e-14 !   Small nucleolar RNA snoR86
+snoZ101              RF00358   MSTRG.37542.1        -          cm        1       96     2525     2617      +    no    1 0.38   0.0   74.6   4.3e-14 !   Small nucleolar RNA Z101
+snoZ101              RF00358   MSTRG.37542.1        -          cm        1       96     1060     1153      +    no    1 0.35   0.0   73.6     8e-14 !   Small nucleolar RNA Z101
+snosnR60_Z15         RF00309   MSTRG.37542.1        -          cm        1       98      293      384      +    no    1 0.34   0.0   78.2   7.3e-13 !   Small nucleolar RNA snR60/Z15/Z230/Z193/J17
+snoR14               RF01280   MSTRG.37542.1        -          cm        1       84      906      990      +    no    1 0.33   0.0   54.0   1.5e-09 !   Small nucleolar RNA snoR14
+SNORD27              RF00086   MSTRG.37542.1        -          cm        1       71      125      208      +    no    1 0.36   0.0   41.9   2.7e-05 !   Small nucleolar RNA SNORD27
+snoU31b              RF01285   MSTRG.37542.1        -          cm        1       86     3006     3090      +    no    1 0.38   0.0   36.5   0.00013 !   Small nucleolar RNA U31b
+snoR77Y              RF01178   MSTRG.37542.1        -          cm        1       85     1063     1153      +    no    1 0.36   0.0   35.7   0.00027 !   Small nucleolar RNA snoR77Y
+SNORD27              RF00086   MSTRG.37542.1        -          cm        1       71     1873     1954      +    no    1 0.34   0.0   34.8    0.0016 !   Small nucleolar RNA SNORD27
+SNORD61              RF00270   MSTRG.37542.1        -          cm        1       72     2247     2321      +    no    1 0.43   0.0   35.5    0.0072 !   Small nucleolar RNA SNORD61
+snoR86               RF00303   MSTRG.37542.2        -          cm        1      123     1217     1341      +    no    1 0.39   0.0  109.2   6.2e-21 !   Small nucleolar RNA snoR86
+snoZ43               RF00330   MSTRG.37542.2        -          cm        1      100     2064     2162      +    no    1 0.45   0.0   92.2   1.6e-20 !   Small nucleolar RNA Z43
+snoZ43               RF00330   MSTRG.37542.2        -          cm        1      100      448      547      +    no    1 0.42   0.0   91.8   2.1e-20 !   Small nucleolar RNA Z43
+snoU61               RF01170   MSTRG.37542.2        -          cm        1       84      761      841      +    no    1 0.43   0.0   78.9   3.2e-18 !   Small nucleolar RNA U61
+snoR14               RF01280   MSTRG.37542.2        -          cm        1       84     2379     2466      +    no    1 0.38   0.0   82.2   4.1e-17 !   Small nucleolar RNA snoR14
+snoU61               RF01170   MSTRG.37542.2        -          cm        1       84     2245     2321      +    no    1 0.43   0.0   68.3   4.4e-15 !   Small nucleolar RNA U61
+snoR86               RF00303   MSTRG.37542.2        -          cm        1      123     1530     1634      +    no    1 0.41   0.0   80.9   2.1e-14 !   Small nucleolar RNA snoR86
+snoZ101              RF00358   MSTRG.37542.2        -          cm        1       96     2525     2617      +    no    1 0.38   0.0   74.6   4.2e-14 !   Small nucleolar RNA Z101
+snoZ101              RF00358   MSTRG.37542.2        -          cm        1       96     1060     1153      +    no    1 0.35   0.0   73.6   7.8e-14 !   Small nucleolar RNA Z101
+snosnR60_Z15         RF00309   MSTRG.37542.2        -          cm        1       98      293      384      +    no    1 0.34   0.0   78.2   7.2e-13 !   Small nucleolar RNA snR60/Z15/Z230/Z193/J17
+snoR14               RF01280   MSTRG.37542.2        -          cm        1       84      906      990      +    no    1 0.33   0.0   54.0   1.5e-09 !   Small nucleolar RNA snoR14
+SNORD27              RF00086   MSTRG.37542.2        -          cm        1       71      125      208      +    no    1 0.36   0.0   41.9   2.7e-05 !   Small nucleolar RNA SNORD27
+snoU31b              RF01285   MSTRG.37542.2        -          cm        1       86     3006     3090      +    no    1 0.38   0.0   36.5   0.00013 !   Small nucleolar RNA U31b
+snoR77Y              RF01178   MSTRG.37542.2        -          cm        1       85     1063     1153      +    no    1 0.36   0.0   35.7   0.00027 !   Small nucleolar RNA snoR77Y
+SNORD27              RF00086   MSTRG.37542.2        -          cm        1       71     1873     1954      +    no    1 0.34   0.0   34.8    0.0016 !   Small nucleolar RNA SNORD27
+SNORD61              RF00270   MSTRG.37542.2        -          cm        1       72     2247     2321      +    no    1 0.43   0.0   35.5     0.007 !   Small nucleolar RNA SNORD61
+snoR86               RF00303   MSTRG.37542.3        -          cm        1      123     1217     1341      +    no    1 0.39   0.0  109.2   6.1e-21 !   Small nucleolar RNA snoR86
+snoZ43               RF00330   MSTRG.37542.3        -          cm        1      100     2064     2162      +    no    1 0.45   0.0   92.2   1.6e-20 !   Small nucleolar RNA Z43
+snoZ43               RF00330   MSTRG.37542.3        -          cm        1      100      448      547      +    no    1 0.42   0.0   91.8   2.1e-20 !   Small nucleolar RNA Z43
+snoU61               RF01170   MSTRG.37542.3        -          cm        1       84      761      841      +    no    1 0.43   0.0   78.9   3.2e-18 !   Small nucleolar RNA U61
+snoR14               RF01280   MSTRG.37542.3        -          cm        1       84     2379     2466      +    no    1 0.38   0.0   82.2   4.1e-17 !   Small nucleolar RNA snoR14
+snoU61               RF01170   MSTRG.37542.3        -          cm        1       84     2245     2321      +    no    1 0.43   0.0   68.3   4.3e-15 !   Small nucleolar RNA U61
+snoR86               RF00303   MSTRG.37542.3        -          cm        1      123     1530     1634      +    no    1 0.41   0.0   80.9     2e-14 !   Small nucleolar RNA snoR86
+snoZ101              RF00358   MSTRG.37542.3        -          cm        1       96     2525     2617      +    no    1 0.38   0.0   74.6   4.2e-14 !   Small nucleolar RNA Z101
+snoZ101              RF00358   MSTRG.37542.3        -          cm        1       96     1060     1153      +    no    1 0.35   0.0   73.6   7.7e-14 !   Small nucleolar RNA Z101
+snosnR60_Z15         RF00309   MSTRG.37542.3        -          cm        1       98      293      384      +    no    1 0.34   0.0   78.2     7e-13 !   Small nucleolar RNA snR60/Z15/Z230/Z193/J17
+snoR14               RF01280   MSTRG.37542.3        -          cm        1       84      906      990      +    no    1 0.33   0.0   54.0   1.4e-09 !   Small nucleolar RNA snoR14
+SNORD27              RF00086   MSTRG.37542.3        -          cm        1       71      125      208      +    no    1 0.36   0.0   41.9   2.6e-05 !   Small nucleolar RNA SNORD27
+snoU31b              RF01285   MSTRG.37542.3        -          cm        1       86     3006     3090      +    no    1 0.38   0.0   36.5   0.00013 !   Small nucleolar RNA U31b
+snoR77Y              RF01178   MSTRG.37542.3        -          cm        1       85     1063     1153      +    no    1 0.36   0.0   35.7   0.00026 !   Small nucleolar RNA snoR77Y
+SNORD27              RF00086   MSTRG.37542.3        -          cm        1       71     1873     1954      +    no    1 0.34   0.0   34.8    0.0015 !   Small nucleolar RNA SNORD27
+SNORD61              RF00270   MSTRG.37542.3        -          cm        1       72     2247     2321      +    no    1 0.43   0.0   35.5    0.0069 !   Small nucleolar RNA SNORD61
 snoR86               RF00303   MSTRG.37542.4        -          cm        1      123     1217     1341      +    no    1 0.39   0.0  109.2   3.5e-21 !   Small nucleolar RNA snoR86
 snoZ43               RF00330   MSTRG.37542.4        -          cm        1      100     2064     2162      +    no    1 0.45   0.0   92.2   9.1e-21 !   Small nucleolar RNA Z43
 snoZ43               RF00330   MSTRG.37542.4        -          cm        1      100      448      547      +    no    1 0.42   0.0   91.8   1.2e-20 !   Small nucleolar RNA Z43
@@ -1184,6 +1482,13 @@ snoR77Y              RF01178   MSTRG.37542.4        -          cm        1      
 SNORD27              RF00086   MSTRG.37542.4        -          cm        1       71     1873     1954      +    no    1 0.34   0.0   34.8   0.00089 !   Small nucleolar RNA SNORD27
 SNORD61              RF00270   MSTRG.37542.4        -          cm        1       72      763      841      +    no    1 0.43   0.0   34.0    0.0085 !   Small nucleolar RNA SNORD61
 U4                   RF00015   MSTRG.37783.1        -          cm        5      138        1      150      +    5'    2 0.53   0.0   97.5   2.7e-23 !   U4 spliceosomal RNA
+LSU_rRNA_eukarya     RF02543   MSTRG.38247.1        -          cm      629     1036        1      407      + 5'&3'    4 0.55   0.0  410.8  1.4e-110 !   Eukaryotic large subunit ribosomal RNA
+LSU_rRNA_archaea     RF02540   MSTRG.38247.1        -          cm      626     1008        1      407      + 5'&3'    4 0.55   0.0  185.4     9e-57 !   Archaeal large subunit ribosomal RNA
+LSU_rRNA_bacteria    RF02541   MSTRG.38247.1        -          cm      585      935        1      407      + 5'&3'    4 0.55   0.0  125.6   1.1e-39 !   Bacterial large subunit ribosomal RNA
+SSU_rRNA_bacteria      RF00177   MSTRG.38315.1        -          cm        1     1168       16     1135      +    3'    3 0.54   7.8  752.7  1.1e-238 !   Bacterial small subunit ribosomal RNA
+SSU_rRNA_archaea       RF01959   MSTRG.38315.1        -          cm       69     1125        1     1135      + 5'&3'    4 0.54  10.3  514.2  8.3e-151 !   Archaeal small subunit ribosomal RNA
+SSU_rRNA_microsporidia RF02542   MSTRG.38315.1        -          cm       64     1006        1     1135      + 5'&3'    4 0.54  10.3  379.8    4e-115 !   Microsporidia small subunit ribosomal RNA
+SSU_rRNA_eukarya       RF01960   MSTRG.38315.1        -          cm      174     1440        1     1135      + 5'&3'    4 0.54  10.3  316.9   8.9e-94 !   Eukaryotic small subunit ribosomal RNA
 LSU_rRNA_bacteria    RF02541   MSTRG.38317.1        -          cm       34     2393        1     2353      + 5'&3'    4 0.55  50.5 1879.2         0 !   Bacterial large subunit ribosomal RNA
 LSU_rRNA_archaea     RF02540   MSTRG.38317.1        -          cm       34     2463        1     2353      + 5'&3'    4 0.55  50.5 1316.5         0 !   Archaeal large subunit ribosomal RNA
 LSU_rRNA_eukarya     RF02543   MSTRG.38317.1        -          cm        1     2746      111     2353      +    3'    3 0.55  48.0  864.6  4.9e-235 !   Eukaryotic large subunit ribosomal RNA
@@ -1196,3 +1501,5 @@ SSU_rRNA_bacteria      RF00177   MSTRG.38781.1        -          cm      426    
 SSU_rRNA_archaea       RF01959   MSTRG.38781.1        -          cm      400      675        1      280      + 5'&3'    4 0.53   0.1  105.6     3e-29 !   Archaeal small subunit ribosomal RNA
 SSU_rRNA_microsporidia RF02542   MSTRG.38781.1        -          cm      328      607        1      280      + 5'&3'    4 0.53   0.1   62.7   3.9e-17 !   Microsporidia small subunit ribosomal RNA
 SSU_rRNA_eukarya       RF01960   MSTRG.38781.1        -          cm      886      954      212      280      +    3'    4 0.48   0.0   20.0    0.0012 !   Eukaryotic small subunit ribosomal RNA
+mir-297              RF04217   MSTRG.39028.1        -          cm        1       71      284      374      +    no    1 0.27   2.0   35.0   0.00074 !   mir-297 microRNA precursor family
+mir-3149             RF04176   MSTRG.39028.1        -          cm        1       83      248      323      +    no    1 0.28   0.9   33.0   0.00075 !   mir-3149 microRNA precursor family
